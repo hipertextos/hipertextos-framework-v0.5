@@ -12,10 +12,10 @@ $(function($) {
 					'<li><a href="../framework/start.html">Start</a></li>'+
 					'<li><a href="../framework/html5template.html">HTML5 template</a></li>'+
 					'<li><a href="../framework/basic-styles.html">Basic styles</a></li>'+
-					'<li><a href="../framework/page&content.html">Page & content</a></li>'+
-					'<li><a href="../framework/layouts&grids.html">Layouts & grids</a></li>'+
-					'<li><a href="../framework/box&color-modes.html">Box & color modes</a></li>'+
-					'<li><a href="../framework/text-modes&fonts.html">Text modes & fonts</a></li>'+
+					'<li><a href="../framework/page-content.html">Page & content</a></li>'+
+					'<li><a href="../framework/layouts-grids.html">Layouts & grids</a></li>'+
+					'<li><a href="../framework/box-color-modes.html">Box & color modes</a></li>'+
+					'<li><a href="../framework/text-modes-fonts.html">Text modes & fonts</a></li>'+
 					'<li><a href="../framework/buttons.html">Buttons</a></li>'+
 					'<li><a href="../framework/navigation.html">Navigation</a></li>'+
 					'<li><a href="../framework/forms.html">Forms</a></li>'+
@@ -23,15 +23,15 @@ $(function($) {
 					'<li><a href="../framework/tooltips.html">Tooltips</a></li>'+
 					'<li><a href="../framework/font-icons.html">Font icons</a></li>'+
 					'<li><a href="../framework/animations.html">Animations</a></li>'+
-					'<li><a href="../framework/image-frames&effects.html">Image frames & effects</a></li>'+
-					'<li><a href="../framework/print&responsive.html">Print & responsive</a></li>'+
-					'<li><a href="../framework/scripts&fallbacks.html">Scripts</a></li>'+
+					'<li><a href="../framework/image-frame-effects.html">Image frames & effects</a></li>'+
+					'<li><a href="../framework/print-responsive.html">Print & responsive</a></li>'+
+					'<li><a href="../framework/scripts-fallbacks.html">Scripts</a></li>'+
 					'<li><a href="../framework/plugins.html">Plugins</a></li>'+
 					'<li><a href="../framework/license.html">License</a></li>'+
 					'<li class="divider"></li>'+
 					'<li><a href="http://articles.hipertextos.net">Blog</a></li>'+
-					'<li><a href="http://hipertextos.net/services/">Services</a></li>'+
-					'<li><a href="http://hipertextos.net/about/">About</a></li>'+
+					'<li><a href="../services/">Services</a></li>'+
+					'<li><a href="../about/">About</a></li>'+
 				'</ul>'+
 			'</div>'+
 			'<div class="button-group">'+
@@ -45,13 +45,13 @@ $(function($) {
 			'<div class="button-group">'+
 				'<a data-toggle="dropdown" href="#" data-tooltip="Translate" class="tip-bottom"><img src="../ics/32/black/translate.png" /><span class="visible-phone">Translate</span><div class="caret"></div></a>'+
 				'<ul class="dropdown-menu">'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=es&tl=ca&hl=es&ie=UTF-8"><img src="../ics/32/flags/catalan.png" /> Catalan</a></li>'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=de&hl=de&ie=UTF-8"><img src="../ics/32/flags/deutsch.png" /> Deutsch</a></li>'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=en&hl=en&ie=UTF-8"><img src="../ics/32/flags/english.png" /> English</a></li>'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=fr&hl=fr&ie=UTF-8"><img src="../ics/32/flags/french.png" /> French</a></li>'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=it&hl=it&ie=UTF-8"><img src="../ics/32/flags/italian.png" /> Italian</a></li>'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=pt&hl=pt&ie=UTF-8"><img src="../ics/32/flags/portuguese.png" /> Portuguese</a></li>'+
-					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=es&hl=es&ie=UTF-8"><img src="../ics/32/flags/spanish.png" /> Spanish</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=ca&u='+ url +'"><img src="../ics/32/flags/catalan.png" /> Catalan</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=de&u='+ url +'"><img src="../ics/32/flags/deutsch.png" /> Deutsch</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=en&u='+ url +'"><img src="../ics/32/flags/english.png" /> English</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=fr&u='+ url +'"><img src="../ics/32/flags/french.png" /> French</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=it&u='+ url +'"><img src="../ics/32/flags/italian.png" /> Italian</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=pt&u='+ url +'"><img src="../ics/32/flags/portuguese.png" /> Portuguese</a></li>'+
+					'<li><a href="http://translate.google.es/translate?hl=es&sl=auto&tl=es&u='+ url +'"><img src="../ics/32/flags/spanish.png" /> Spanish</a></li>'+
 				'</ul>'+
 			'</div>'+
 			'<form class="form-search" action="http://www.google.com/cse">'+
@@ -72,8 +72,8 @@ $(function($) {
 			'</div>'+
 			'<div class="span-3">'+
 				'<h5 class="title">Rights</h5>'+
-				'<p class="title">Copyleft by <a href="http://hipertextos.net/about">Hipertextos</a></p>'+
-				'<p class="title"><a href="http://hipertextos.net/framework/licenses.html">Framework licenses</a></p>'+
+				'<p class="title">Copyleft by <a href="../about">Hipertextos</a></p>'+
+				'<p class="title"><a href="../framework/licenses.html">Framework licenses</a></p>'+
 			'</div>'+
 			'<div class="span-3">'+
 				'<h5 class="title">Technologies</h5>'+
