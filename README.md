@@ -6,11 +6,11 @@ A semantic oriented CSS framework
 Presentation
 ============
 
-Hipertextos is a framework but is not exactly a framework. It is, rather, an example, a way to work when we make web page.
+Hipertextos is a framework but not exactly a framework. It's rather an example, a way to work when we make web pages. 
 
-Unlike other frameworks, Hipertextos uses CSS classes to create reusable modes of color and text. Hipertextos don't uses preprocessors: no variables, no less, no Sass. It focuses on the natural language of HTML and makes heavy use of semantic tags according to the contexts in which they find themselves.
+Unlike other frameworks, Hipertextos uses CSS classes to create reusable modes of color and text. Hipertextos don't uses preprocessors: no variables, no less, no Sass. Focused on the natural language of HTML, using semantic tags according to the contexts in which they find themselves.
 
-The idea behind Hipertextos is that every web developer or designer creates their own framework, according to their needs. The framework is a starting point, a resource library. Presenting this Framework we just want to give back to the open source community tools we use in our daily work.
+The idea behind Hipertextos framework is that every web developer or designer creates their own framework, according to their needs. It's a starting point, a resource library. Presenting this Framework we just want to give back to the open source community tools that we use in our daily work.
 
 Hipertextos is a core set of HTML, CSS and JS files to developing modern sites and web applications. Like most existing frameworks is developed on HTML5, CSS3 and uses the popular jQuery library script.
 
@@ -34,7 +34,7 @@ File structure
 
 css/hipertextos.css
 ---------------
-hipertextos.css could be divided into 9 CSS files but is unnecessary. It is structured as follows:
+hipertextos.css could be divided into 9 CSS but is unnecessary. It's structured as follows:
 
 * Browser Resets
 * HTML5 tags
