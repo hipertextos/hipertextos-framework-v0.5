@@ -23,7 +23,7 @@ $(function($) {
 					'<li><a href="../framework/tooltips.html">Tooltips</a></li>'+
 					'<li><a href="../framework/font-icons.html">Font icons</a></li>'+
 					'<li><a href="../framework/animations.html">Animations</a></li>'+
-					'<li><a href="../framework/image-frame-effects.html">Image frames & effects</a></li>'+
+					'<li><a href="../framework/image-frames-effects.html">Image frames & effects</a></li>'+
 					'<li><a href="../framework/print-responsive.html">Print & responsive</a></li>'+
 					'<li><a href="../framework/scripts-fallbacks.html">Scripts</a></li>'+
 					'<li><a href="../framework/plugins.html">Plugins</a></li>'+
