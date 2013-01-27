@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: License</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled, hack for TOC -->
+	<noscript><style>.no-js { display: none;} .pagedisplaced { position:relative; } .pagedisplaced .content { margin: 0px auto; }</style></noscript>
+	
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">License</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+
+			<div class="layout">
+			
+				<h3 class="intoc">General MIT License</h3>
+				<div class="span-4"><img src="../img/open-source.png" class="fig-zoomable" /></div>
+				<div class="span-8">
+					<p>Hipertextos Framework is open source and it's distribute under a MIT License. You can use it for free to any purposes, respecting the Copyright and the license terms.</p>
+					<p>Hipertextos Framework was thinked and coded by <a href="http://acozar.com">Pol Acózar</a>. For references, please link the <a href="http://hipertextos.net">hipertextos home page</a>.</p>
+					<pre>
+The MIT License (MIT)
+
+Copyright (c) 2013 by Pol Acozar (hipertextos.net)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+					</pre>
+				</div>
+				
+				<h3 class="intoc">Third-party code</h3>
+				<p>Some third-party code are integrated in Hipertextos Framework.</p>
+				<ul>
+					<li>Bootstrap Dropdown by <a href="http://twitter.github.com/bootstrap/javascript.html#dropdowns">Twitter, Inc</a>. Distributed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> license.</li>
+					<li>LeanModals by <a href="http://leanmodal.finelysliced.com.au/">Finelysliced</a>. Distributed under <a href="http://opensource.org/licenses/MIT">MIT</a> and <a href="http://www.gnu.org/licenses/gpl.html">GPL</a> licenses.</li>
+					<li>jQuery Sticky by <a href="http://thrivingkings.com/sticky">Daniel Raftery</a>. Distributed under <a href="http://opensource.org/licenses/MIT">MIT</a> license.</li>
+					<li>Responsiveslides by <a href="http://responsiveslides.com">Vil Jamis</a>. Distributed under <a href="http://opensource.org/licenses/MIT">MIT</a> license.</li>
+				</ul>
+					
+				<h3 class="intoc">CSS and jQuery plugins</h3>
+				<p>Some third-party plugins are included in hipertextos package. Get more information about plugins and licenses in <a href="plugins.html">Plugins section</a>.</p>
+				
+			</div><!-- /.layout -->
+		
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

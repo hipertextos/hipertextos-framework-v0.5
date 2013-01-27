@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Scripts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+	<div class="modal box animated bounce" id="modal">
+		<a class="icon-button" href="#">X</a>
+		<header><h4>Modal title</h4></header>
+		<div class="corpus"><p>This is a Modal</p></div>
+		<footer>
+			<p>This is a modal footer.</p>
+		</footer>
+	</div>
+	
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Scripts</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+			
+			<div class="layout">
+				<h3 class="intoc">One script, a lot of features</h3>
+				<p>Hipertextos framework includes hipertextos.js script to work with jQuery. This script add useful features to your project with less than 1000 lines of code. To use this script in your web projects just must be include it.</p> 
+				<pre class="prettyprint linenums">&lt;script src=&quot;../js/jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/hipertextos.js&quot;&gt;&lt;/script&gt;</pre>
+
+				<h3 class="intoc">Fallbacks</h3>
+				<p>HTML5shim is used by default to add old browser support. Using font icons, icomoon-lte-ie7.js is needed to add support to iexplorer 6 and 7. In all cases, Javascript fallbacks are recommended.</p> 
+				<pre class="prettyprint linenums">&lt;!--[if lt IE 9]&gt;&lt;script src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+&lt;!--[if lt IE 7]&gt;&lt;script src=&quot;../js/icomoon-lte-ie7.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+&lt;!-- If JS disabled --&gt;&lt;noscript&gt;&lt;link href=&quot;../css/hipertextos-noscript.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;&lt;/noscript&gt;</pre>
+				
+				<h3 class="intoc">Collapser/Accordion</h3>
+				<p>Collapse and uncollapse elements with simple HTML markup.</p>
+				<h4>Demo</h4>
+				<div class="collapser">
+					<span><h6>Toggle</h6></span>
+					<div>Collapse content</div>
+					<span><h6>Toggle</h6></span>
+					<div>Collapse content</div>
+				</div>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">
+&lt;div class=&quot;collapser&quot;&gt;
+	&lt;span&gt;&lt;h6&gt;Toggle&lt;/h6&gt;&lt;/span&gt;
+	&lt;div&gt;Collapse content&lt;/div&gt;
+	&lt;span&gt;&lt;h6&gt;Toggle&lt;/h6&gt;&lt;/span&gt;
+	&lt;div&gt;Collapse content&lt;/div&gt;
+&lt;/div&gt;</pre>
+				
+				<h3 class="intoc">Dropdown</h3>
+				<p>A modified version of Bootstrap's Dropdown is included in hipertextos.js. A strange bug in touch screens present in this script was repaired.</p>
+				<h4>Demo</h4>
+					<div class="button-group">
+						<a data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+						</ul>
+					</div>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;div class=&quot;button-group&quot;&gt;
+&lt;a data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</pre>				
+				
+
+				<h3 class="intoc">Flip</h3>
+				<p>hipertextos.js includes flip plugin CSS3 based. Works on all modern browsers.</p>
+				<h4>Demo</h4>				
+					<div class="click flip-panel">
+						<div class="flip-front">
+							<h1>Hello!</h1>
+						</div>
+						<div class="flip-back">
+							<h1>Goodbye!</h1>
+						</div>
+					</div>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;div class=&quot;click flip-panel&quot;&gt;
+	&lt;div class=&quot;flip-front&quot;&gt;
+		&lt;h1&gt;Hello!&lt;/h1&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;flip-back&quot;&gt;
+		&lt;h1&gt;Goodbye!&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+			
+			
+				<h3 class="intoc">Modals</h3>
+				<p>A modified version of <a href="http://leanmodal.finelysliced.com.au/">Lean Modal</a> is included in hipertextos.js. With this script is easy create custom modals in combination with <a href="box-modes.html">"box" color modes</a> and <a href="animations.html">CSS3 animations</a>. <a href="box-modes.html">View more examples</a>.</p>
+				<h4>Demo</h4>
+					<a class="button" rel="modal" href="#modal">Launch modal</a>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;div class=&quot;modal box animated bounce&quot; id=&quot;modal&quot;&gt;
+	&lt;a class=&quot;icon-button&quot; href=&quot;#&quot;&gt;X&lt;/a&gt;
+	&lt;header&gt;&lt;h4&gt;Modal title&lt;/h4&gt;&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;&lt;p&gt;This is a Modal&lt;/p&gt;&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;p&gt;This is a modal footer.&lt;/p&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;</pre>
+				<h4>JS</h4>
+				<pre class="prettyprint linenums">&lt;script&gt;
+	$(function() {
+		// Modals
+		$('a[rel*=modal]').leanModal({ top : 200, overlay : 0.6, closeButton: &quot;.icon-button&quot; });
+	});  
+&lt;/script&gt;</pre>				
+				
+				<h3 class="intoc">Notifier</h3>
+				<p>Hipertextos.js includes a very simple notifier to create customizable alerts. This script is based on <a href="http://thrivingkings.com/sticky">jQuery Sticky</a>, a work by Daniel Raftery deprecated on july 19, 2011.</p>
+				<h4>Demo</h4>
+					<div id="htnotifier"></div>
+					<br class="clearfix" />
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;div id=&quot;htnotifier&quot;&gt;&lt;/div&gt;</pre>
+				<h4>JS</h4>
+				<pre class="prettyprint linenums">$('#ID1').htnotifier('&lt;div class=&quot;box danger&quot;&gt;&lt;header&gt;&lt;h4&gt;Notification demo 1&lt;/h4&gt;&lt;/header&gt;&lt;div class=&quot;corpus&quot;&gt;&lt;p&gt;Content&lt;/p&gt;&lt;/div&gt;&lt;footer&gt;Footer&lt;/footer&gt;&lt;/div&gt;');
+$('#ID2').htnotifier('&lt;div class=&quot;box warning&quot;&gt;&lt;header&gt;&lt;h4&gt;Notification demo 2&lt;/h4&gt;&lt;/header&gt;&lt;div class=&quot;corpus&quot;&gt;&lt;p&gt;Content&lt;/p&gt;&lt;/div&gt;&lt;footer&gt;Footer&lt;/footer&gt;&lt;/div&gt;');</pre>
+				
+				<h3 class="intoc">Persistant subnav fixed on scroll</h3>
+				<p>Hipertextos.js includes also a easy way to creat a persistant subnav fixed on scroll.</p>
+				<h4>Demo</h4>
+					<nav class="subnav">
+						<div class="content">
+							<a href="#">Item</a>
+							<a href="#">Item</a>
+							<a href="#">Item</a>
+							<a href="#">Item</a>
+						</div>
+					</div>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;nav class=&quot;subnav&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+				<h3 class="intoc">Responsive slides</h3>
+				<p><a href="http://responsive-slides.viljamis.com">ResponsiveSlides.js</a> by Viljami Salminen are included in hipertextos.js script. </p>
+				<h4>Demo</h4>
+				    <div class="rslides-content">
+						<ul class="rslides">
+						  <li><img src="../img/sample1.jpg" alt="Slide 1"></li>
+						  <li><img src="../img/sample2.jpg" alt="Slide 2"></li>
+						  <li><img src="../img/sample3.jpg" alt="Slide 3"></li>
+						</ul>
+					</div>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;div class=&quot;rslides-content&quot;&gt;
+	&lt;ul class=&quot;rslides&quot;&gt;
+	  &lt;li&gt;&lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Slide 1&quot;&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;img src=&quot;../img/sample2.jpg&quot; alt=&quot;Slide 2&quot;&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;img src=&quot;../img/sample3.jpg&quot; alt=&quot;Slide 3&quot;&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+
+				<h3 class="intoc">Responsive nav component</h3>
+				<p>Hipertextos.js includes a simple script to collapse and uncollapse site's nav on small screen devices, as Bootstrap style.</p>
+				<h4>Demo</h4>
+				<p>The fixed nav on top this page is an example. Resize your window to see the effect in action.</p>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;nav&gt;
+	&lt;div class=&quot;content&quot;&gt;
+		&lt;a href=&quot;#&quot; id=&quot;nav-toggle&quot; class=&quot;nav-toggle&quot;&gt;&lt;img src=&quot;../ics/16/black/list.png&quot; /&gt;&lt;/a&gt;
+		&lt;div id=&quot;nav-collapse&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Item&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</pre>
+				
+				<h3 class="intoc">Smooth scroll</h3>
+				<p>Hipertextos.js includes a simple script to animate scroll to anchors in the same page.</p>
+				<h4>Demo</h4>
+				<a href="#top">Go to top</a>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;a href=&quot;#top&quot;&gt;Go to top&lt;/a&gt;</pre>
+				
+				<h3 class="intoc">Tabs</h3>
+				<p>Hipertextos.js includes a lightweight tabs contructor with 4 position styles (left, right, top and bottom). The included script only works with a single instance of tabs. This is enough for many web projects. Include the jquery.easytabs.js plugin in your page to create multiple tabs instances and add cool effects to your tabs with the same markup.</p>
+				<h4>Demo</h4>
+				<div class="tabs">
+					<ul class="tabs-content">
+						<li><a href="#tabs1" class="defaulttab" rel="tabs1">Tab #1</a></li>
+						<li><a href="#tabs2" rel="tabs2">Tab #2</a></li>
+						<li><a href="#tabs3" rel="tabs3">Tab #3</a></li>
+					</ul>
+					<div class="panel-content">
+						<div class="panel-tab" id="tabs1">Tab #1 content</div>
+						<div class="panel-tab" id="tabs2">Tab #2 content</div>
+						<div class="panel-tab" id="tabs3">Tab #3 content</div>
+					</div>
+				</div>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;div class=&quot;tabs&quot;&gt;
+	&lt;ul class=&quot;tabs-content&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#tabs1&quot; class=&quot;defaulttab&quot; rel=&quot;tabs1&quot;&gt;Tab #1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#tabs2&quot; rel=&quot;tabs2&quot;&gt;Tab #2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#tabs3&quot; rel=&quot;tabs3&quot;&gt;Tab #3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class=&quot;panel-content&quot;&gt;
+		&lt;div class=&quot;panel-tab&quot; id=&quot;tabs1&quot;&gt;Tab #1 content&lt;/div&gt;
+		&lt;div class=&quot;panel-tab&quot; id=&quot;tabs2&quot;&gt;Tab #2 content&lt;/div&gt;
+		&lt;div class=&quot;panel-tab&quot; id=&quot;tabs3&quot;&gt;Tab #3 content&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+				<h3 class="intoc">Table of Content (TOC)</h3>
+				<p>You can add a sidebar with a TOC with this small javascript in your page. You can load a dynamic index of content inside TOC sidebar with the plugin <a href="http://gregfranko.com/jquery.tocify.js/">jquery.tocify.js</a>, used in this page. The scripts needed are included in the complete package.</p>
+				<h4>Demo</h4>
+				<p>You can see a demo of TOC sidebar in the left section of this page.</p>
+				<h4>HTML Markup</h4>
+				<pre class="prettyprint linenums">&lt;!-- TOC --&gt;
+&lt;div class=&quot;toc-button no-js&quot; id=&quot;tocing&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toc-side no-js&quot; id=&quot;toc&quot;&gt;&lt;/div&gt;</pre>
+				<h4>JS</h4>
+				<pre class="prettyprint linenums">$(function() {
+	// Calls the toc-side and hide it
+	$(&quot;.page&quot;).removeClass(&quot;pagedisplaced&quot;);
+	//Calls the tocify method on your HTML div.
+	$(&quot;#toc&quot;).animate({width: 'toggle'}, 500);
+});  
+$(&quot;#tocing&quot;).click(function(){
+	$(&quot;#toc&quot;).animate({width: 'toggle'}, 500);
+	$('#toc').toggleClass('animated bounceInLeft');
+	$(&quot;.page&quot;).toggleClass(&quot;pagedisplaced&quot;);
+	$(&quot;.toc-button&quot;).toggleClass(&quot;expanded&quot;);
+});</pre>
+				<h4>JS to use with jquery.tocify</h4>
+				<pre class="prettyprint linenums">
+&lt;script src=&quot;../js/jquery.ui.widget.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/jquery.tocify.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/google.prettify.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+	$(function() {
+		// Calls the toc-side and hide it
+		$(&quot;.page&quot;).removeClass(&quot;pagedisplaced&quot;);
+		//Calls the tocify method on your HTML div.
+		$(&quot;#toc&quot;).tocify({ selectors: &quot;h3&quot; });
+		$(&quot;#toc&quot;).animate({width: 'toggle'}, 500);
+	});  
+	$(&quot;#tocing&quot;).click(function(){
+		$(&quot;#toc&quot;).animate({width: 'toggle'}, 500);
+		$('#toc').toggleClass('animated bounceInLeft');
+		$(&quot;.page&quot;).toggleClass(&quot;pagedisplaced&quot;);
+		$(&quot;.toc-button&quot;).toggleClass(&quot;expanded&quot;);
+	});
+&lt;/script&gt;
+				</pre>
+				
+
+			</div><!-- /.layout -->
+			
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Modals
+			$('a[rel*=modal]').leanModal({ top : 200, overlay : 0.6, closeButton: ".icon-button" });
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});
+		 $(document).ready(function() {
+			$('#danger').htnotifier('<div class="box danger"><header><h4>Notification demo 1</h4></header><div class="corpus"><p>Content</p></div><footer>Footer</footer></div>');
+			$('#warning').htnotifier('<div class="box warning"><header><h4>Notification demo 2</h4></header><div class="corpus"><p>Content</p></div><footer>Footer</footer></div>');
+			$(".rslides").responsiveSlides({
+			  auto: true,             // Boolean: Animate automatically, true or false
+			  speed: 1000,            // Integer: Speed of the transition, in milliseconds
+			  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+			  pager: true,           // Boolean: Show pager, true or false
+			  nav: true,             // Boolean: Show navigation, true or false
+			  random: false,          // Boolean: Randomize the order of the slides, true or false
+			  pause: false,           // Boolean: Pause on hover, true or false
+			  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+			  prevText: "Previous",   // String: Text for the "previous" button
+			  nextText: "Next",       // String: Text for the "next" button
+			  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+			  controls: "",           // Selector: Where controls should be appended to, default is after the 'ul'
+			  namespace: "centered-btns"   // String: change the default namespace used
+			});
+  		});
+    </script>
+  </body>
+</html>

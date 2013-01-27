@@ -1,0 +1,23 @@
+/* Noscript basics */
+
+.no-js,
+.toc-button { display: none;} 
+
+.js,
+.collapser div,
+.panel-content { clear: both; display: block; }
+
+
+/* Page & TOC */
+
+.pagedisplaced { position:relative; } 
+.pagedisplaced .content { margin: 0px auto; }
+
+/* rslider */
+
+.rslides li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+}

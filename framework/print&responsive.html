@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Print & responsive CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Print & responsive CSS</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+			
+			<div class="layout">
+				
+				<h3 class="intoc">Print CSS</h3>
+				<p>Hipertextos framework includes a simple print stylesheet.</p>
+				<p>With this stylesheet:</p>
+				<ol>
+					<li>Remove the backgrounds</li>
+					<li>Remove the navigation elements (nav, TOC, modals,...)</li>
+					<li>Set up serif typography, point sizes and black color for all content by default.</li>
+					<li>Print links destinations in parentesis after all links</li>
+					<li>Remove layouts and floats to fit elements to full page.</li>
+					<li>Fit images to full page</li>
+				</ol>
+				
+				<h3 class="intoc">Responsive CSS</h3>
+				<p>Hipertextos framework makes all content responsive to adapt pages to all devices. All content is fit to full screen. Grids and layouts are sized with percentages.</p>
+				<p>Some elements like TOC or tooltips are not displayed in smallest devices.</p>
+				<p>Responsive CSS is structured in 6 screen devices:</p>
+				<table>
+					<thead>
+						<tr class="settings">
+							<th>Device</th>
+							<th>Media query</th>
+						</tr>
+					</thead>
+					<tr>
+							<th class="news">Default</th>
+							<th>From 980 to 1199 and default</th>
+					</tr>
+					<tr>
+							<th class="news">Big desktop</th>
+							<th>From 1200px to &#8734;</th>
+					</tr>
+					<tr>
+							<th class="news">Tablet landscape</th>
+							<th>From 768px to 979px</th>
+					</tr>
+					<tr>
+							<th class="news">Tablet portrait</th>
+							<th>Until 767px</th>
+					</tr>
+					<tr>
+							<th class="news">Phone landscape</th>
+							<th>Until 480px</th>
+					</tr>
+					<tr>
+							<th class="news">Phone portrait</th>
+							<th>Until 320px</th>
+					</tr>
+				</table>
+				
+				<p>Hipertextos includes responsive classes, to hide content depending the screen size, inspired by Boostrap.</p>
+				<table>
+					<thead>
+						<tr class="settings">
+							<th>Class</th>
+							<th>Phones</th>
+							<th>Tablets</th>
+							<th>Desktops</th>
+						</tr>
+					</thead>
+					<tr>
+						<th><code>.visible-phone</code></th>
+						<th class="success">Visible</th>
+						<th class="error">Hidden</th>
+						<th class="error">Hidden</th>
+					</tr>
+					<tr>
+						<th><code>.visible-tablet</code></th>
+						<th class="error">Hidden</th>
+						<th class="success">Visible</th>
+						<th class="error">Hidden</th>
+					</tr>
+					<tr>
+						<th><code>.visible-desktop</code></th>
+						<th class="error">Hidden</th>
+						<th class="error">Hidden</th>
+						<th class="success">Visible</th>
+					</tr>
+					<tr>
+						<th><code>.hidden-phone</code></th>
+						<th class="error">Hidden</th>
+						<th class="success">Visible</th>
+						<th class="success">Visible</th>
+					</tr>
+					<tr>
+						<th><code>.hidden-tablet</code></th>
+						<th class="success">Visible</th>
+						<th class="error">Hidden</th>
+						<th class="success">Visible</th>
+					</tr>
+					<tr>
+						<th><code>.hidden-desktop</code></th>
+						<th class="success">Visible</th>
+						<th class="success">Visible</th>
+						<th class="error">Hidden</th>
+					</tr>
+				</table>
+				
+				
+			</div><!-- /.layout -->
+			
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

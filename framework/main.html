@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Base CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced animated-large pageIn">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Base CSS</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+			
+			<div class="layout">
+				<div class="span-4">
+					<div class="box prestige animated-delay bounce">
+						<header><h3><a href="start.html">Start</a></h3></header>
+					</div>
+				</div>
+				<div class="span-4">
+					<div class="box prestige animated-delay bounceInDown">
+						<header><h3><a href="start.html">Start</a></h3></header>
+					</div>
+				</div>
+				<div class="span-4">
+					<div class="box prestige animated-delay bounceInRight">
+						<header><h3><a href="start.html">Start</a></h3></header>
+					</div>
+				</div>
+				<div class="span-4">
+					<div class="box prestige animated-delay bounceInLeft">
+						<header><h3><a href="start.html">Start</a></h3></header>
+					</div>
+				</div>
+				<div class="span-4">
+					<div class="box prestige animated-delay bounceInUp">
+						<header><h3><a href="start.html">Start</a></h3></header>
+					</div>
+				</div>
+				<div class="span-4">
+					<div class="box prestige animated-delay bounceInRight">
+						<header><h3><a href="start.html">Start</a></h3></header>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+			
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

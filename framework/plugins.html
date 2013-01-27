@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Plugins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Plugins</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+				
+				<h3 class="intoc">CSS Animate</h3>
+				<p>Hipertextos package includes Dan Eden's CSS animate to work with CSS animations. Some features are added to the original version</p>
+				<ul>
+					<li>Author: <a href="http://twitter.com/_dte">Dan Eden</a>.</li>
+					<li>Web: <a href="http://daneden.me/animate/">daneden.me/animate/</a>.</li>
+					<li>Description: <cite>"animate.css is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness".</cite></li>
+					<li>License: <a href="http://licence.visualidiot.com">Visual Idiot</a>.</li>
+				</ul>
+				<h5>Use</h5>
+				<pre class="prettyprint linenums">&lt;link href=&quot;../css/animate.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;</pre>
+				<p>See the <a href="animations.html">animations page</a> to know about animations in hipertextos framework.</p>
+				
+				<h3 class="intoc">Google prettify</h3>
+				<p>Hipertextos package includes jQuery Google prettify to display code.</p>
+				<ul>
+					<li>Author: <a href="http://code.google.com/u/mikesamuel@gmail.com/">Mike Samuel</a>.</li>
+					<li>Web: <a href="http://code.google.com/p/google-code-prettify/">Google code prettify</a>.</li>
+					<li>Description: <cite>"A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page".</cite></li>
+					<li>License: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache license 2.0</a>.</li>
+				</ul>
+				<h5>Use</h5>
+				<pre class="prettyprint linenums">&lt;link href=&quot;../css/google.prettify.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+&lt;script src=&quot;../js/google.prettify.js&quot;&gt;&lt;/script&gt;</pre>
+				<h5>HTML Markup</h5>
+				<pre class="prettyprint linenums">&lt;pre class=&quot;prettyprint linenums&quot;&gt;&lt;/pre&gt;</pre>
+				
+				<h3 class="intoc">Easy Tabs</h3>
+				<p>Hipertextos package includes jQuery Easytabs</p>
+				<ul>
+					<li>Author: <a href="http://alfajango.com">Steve Schwartz (JangoSteve)</a>.</li>
+					<li>Web: <a href="http://os.alfajango.com/easytabs/">jQuery Easytabs</a>.</li>
+					<li>Description: <cite>"EasyTabs is a lightweight jQuery plugin to provide full tab functionality, while leaving the styling up to you.". </cite></li>
+					<li>License: <a href="http://opensource.org/licenses/MIT">MIT</a> and <a href="http://www.gnu.org/licenses/gpl.html">GPL</a>.</li>
+				</ul>
+				<h5>Use</h5>
+				<pre class="prettyprint linenums">&lt;script src=&quot;../js/jquery.easytabs.js&quot;&gt;&lt;/script&gt;</pre>
+				<p>Jquery easy tabs works with the same HTML markup that <a href="scripts&fallbacks.html#Tabs">hipertextos.js</a>, adding effects and multiple instances.</p>
+				
+				<h3 class="intoc">Tocify</h3>
+				<p>Hipertextos package includes jQuery Tocify</p>
+				<ul>
+					<li>Author: <a href="http://www.twitter.com/gregfranko">Greg Franko</a>.</li>
+					<li>Web: <a href="http://gregfranko.com/jquery.tocify.js/">jQuery Tocify</a>.</li>
+					<li>Description: <cite>"A jQuery Table of Contents plugin that can be themed with Twitter Bootstrap or jQueryUI". </cite></li>
+					<li>License: <a href="http://opensource.org/licenses/MIT">MIT</a>.</li>
+				</ul>
+				<h5>Use</h5>
+				<pre class="prettyprint linenums">&lt;script src=&quot;../js/jquery.ui.widget.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../js/jquery.tocify.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+	$(function() {
+		// Calls the toc-side and hide it
+		$(&quot;.page&quot;).removeClass(&quot;pagedisplaced&quot;);
+		//Calls the tocify method on your HTML div.
+		$(&quot;#toc&quot;).tocify({ selectors: &quot;h3&quot; });
+		$(&quot;#toc&quot;).animate({width: 'toggle'}, 500);
+	});  
+	$(&quot;#tocing&quot;).click(function(){
+		$(&quot;#toc&quot;).animate({width: 'toggle'}, 500);
+		$('#toc').toggleClass('animated bounceInLeft');
+		$(&quot;.page&quot;).toggleClass(&quot;pagedisplaced&quot;);
+		$(&quot;.toc-button&quot;).toggleClass(&quot;expanded&quot;);
+	});
+&lt;/script&gt;</pre>
+				<h5>HTML Markup</h5>
+				<pre class="prettyprint linenums">&lt;!-- TOC --&gt;
+&lt;div class=&quot;toc-button no-js&quot; id=&quot;tocing&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;toc-side no-js&quot; id=&quot;toc&quot;&gt;&lt;/div&gt;</pre>
+				
+				
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

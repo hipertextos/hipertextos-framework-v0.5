@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Basic styles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+			<header id="top" class="news">
+				<div class="content">
+					<hgroup>
+						<h1 class="intoc">Basic styles</h1>
+						<p>Hipertextos Framework</p>
+					</hgroup>
+				</div><!-- /.content -->
+			</header>
+			<div class="content">
+			<section>
+				<article>
+					<header>						
+						<h3 class="intoc">Globals</h3>
+						<p>Hipertextos CSS uses a short CSS Reset inspired by Eric Meyer's reset.</p>
+						<p>Hipertextos CSS uses a 8px baseline with 16px default font-size and 24px default line-height. All elements are aligned in a 8px vertical grid.</p>
+						<p>Hipertextos CSS uses a sans-serif font stack by default: "Helvetica Neue", Helvetica, Arial, sans-serif.</p>
+					</header>
+					<div>
+						<h3 class="intoc">Header, Hgroup & Headings</h3>
+						<hgroup>
+							<h1>Heading h1 (font: 48px)</h1>
+							<h2>Heading h2 (font: 40px)</h2>
+							<h3>Heading h3 (font: 36px)</h3>
+							<h4>Heading h4 (font: 32px)</h4>
+							<h5>Heading h5 (font: 24px)</h5>
+							<h6>Heading h6 (font: 16px)</h6>
+							<p>Paragraph inside a hgroup have a lead format.</p>
+							<p>Use hgroup tag to create a padding and shadow inside the header box. </p>
+						</hgroup>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;hgroup&gt;
+	&lt;h1&gt;Heading h1 (font: 48px)&lt;/h1&gt;
+	&lt;h2&gt;Heading h2 (font: 40px)&lt;/h2&gt;
+	&lt;h3&gt;Heading h3 (font: 36px)&lt;/h3&gt;
+	&lt;h4&gt;Heading h4 (font: 32px)&lt;/h4&gt;
+	&lt;h5&gt;Heading h5 (font: 24px)&lt;/h5&gt;
+	&lt;h6&gt;Heading h6 (font: 16px)&lt;/h6&gt;
+	&lt;p&gt;Paragraph inside a hgroup have a lead format.&lt;/p&gt;
+	&lt;p&gt;Use hgroup tag to create a padding and shadow inside the header box. &lt;/p&gt;
+&lt;/hgroup&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Nav</h3>
+						<nav>
+							<a href="#top" rel="modal">Nav inside</a>
+							<a href="#top">a div</a>
+							<a href="#top">with</a>
+							<a href="#top">inline</a>
+							<a href="#top">links.</a>
+						</nav>
+						<nav>
+							<ul>
+								<li><a href="#top">List</a></li>
+								<li><a href="#top">inside</a></li>
+								<li><a href="#top">nav</a></li>
+								<li><a href="#top">creates</a></li>
+								<li><a href="#top">block links</a></li>
+							</ul>
+						</nav>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;nav&gt;
+	&lt;a href=&quot;#top&quot;&gt;Nav inside&lt;/a&gt;
+	&lt;a href=&quot;#top&quot;&gt;a div&lt;/a&gt;
+	&lt;a href=&quot;#top&quot;&gt;with&lt;/a&gt;
+	&lt;a href=&quot;#top&quot;&gt;inline&lt;/a&gt;
+	&lt;a href=&quot;#top&quot;&gt;links.&lt;/a&gt;
+&lt;/nav&gt;
+&lt;nav&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#top&quot; title=&quot;Destiny&quot;&gt;List&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#top&quot;&gt;inside&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#top&quot;&gt;nav&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#top&quot;&gt;creates&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#top&quot;&gt;block links&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Paragraph and text tags</h3>
+						<p>Publish at <time datetime="2012-12-01">December 01 of 2012</time> by Hipertextos.</p>
+						<p>This is a paragraph sample with a <a href="#top" title="Typi non habent claritatem insitam">inline link</a>, <abbr title="abbreviation">abbreviation with abbr tag</abbr>, <em>italic with a em tag</em>, <q>inline quote with q tag</q>,<small>small text inside small tag</small>, <strong>bold text with strong tag</strong>, <code>inline code</code>, and <mark>marked text</mark>.</p>
+						<p>More paragraphs: typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;p&gt;Publish at &lt;time datetime=&quot;2012-12-01&quot;&gt;December 01 of 2012&lt;/time&gt; by Hipertextos.&lt;/p&gt;
+&lt;p&gt;This is a paragraph sample with a &lt;a href=&quot;#top&quot; title=&quot;Typi non habent claritatem insitam&quot;&gt;inline link&lt;/a&gt;, &lt;abbr title=&quot;abbreviation&quot;&gt;abbreviation with abbr tag&lt;/abbr&gt;, &lt;em&gt;italic with a em tag&lt;/em&gt;, &lt;q&gt;inline quote with q tag&lt;/q&gt;,&lt;small&gt;small text inside small tag&lt;/small&gt;, &lt;strong&gt;bold text with strong tag&lt;/strong&gt;, &lt;code&gt;inline code&lt;/code&gt;, and &lt;mark&gt;marked text&lt;/mark&gt;.&lt;/p&gt;
+&lt;p&gt;More paragraphs: typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.&lt;/p&gt;
+
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />	
+						
+						<h3 class="intoc">Code</h3>
+						<pre>/ Code here /</pre>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;pre&gt;/ Code here /&lt;/pre&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Blockquote</h3>
+						<blockquote><p>This is a blockquote</p><p><small>by Magnificus (inside "small" tag)</small></p></blockquote>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;blockquote&gt;&lt;p&gt;This is a blockquote&lt;/p&gt;&lt;p&gt;&lt;small&gt;by Magnificus (inside &quot;small&quot; tag)&lt;/small&gt;&lt;/p&gt;&lt;/blockquote&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Lists</h3>
+						<ul>
+						  <li><strong>Creating lists</strong></li>
+						  <li>Manage lists is easy with ul and li tags.</li>
+						  <li>As old way.</li>
+						  <li>Lists are useful.</li>
+						  <li>Lists can be indented
+							<ul>
+							  <li>Creating trees.</li>
+							  <li>Lists are easy to display content.</li>
+							  <li>Lists are funny.</li>
+							  <li>Don't miss the lists.</li>
+							</ul>
+						  </li>
+						  <li>Love lists.</li>
+						</ul>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Creating lists&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Manage lists is easy with ul and li tags.&lt;/li&gt;
+  &lt;li&gt;As old way.&lt;/li&gt;
+  &lt;li&gt;Lists are useful.&lt;/li&gt;
+  &lt;li&gt;Lists can be indented
+	&lt;ul&gt;
+	  &lt;li&gt;Creating trees.&lt;/li&gt;
+	  &lt;li&gt;Lists are easy to display content.&lt;/li&gt;
+	  &lt;li&gt;Lists are funny.&lt;/li&gt;
+	  &lt;li&gt;Don't miss the lists.&lt;/li&gt;
+	&lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Love lists.&lt;/li&gt;
+&lt;/ul&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Ordered Lists</h3>
+						<ol>
+						  <li><strong>Lists can be numbered inside the ol tags.</strong></li>
+						  <li>It's a good think.</li>
+						  <li>And numbered lists</li>
+						  <li>can be nested too,</li>
+						  <li>to create lists inside lists.
+							<ol>
+							  <li>And say: first,</li>
+							  <li>second,</li>
+							  <li>thirth,</li>
+							  <li>etc...</li>
+							</ol>
+						  </li>
+						  <li>Use "li" tag to create</li>
+						  <li>list elements.</li>
+						</ol>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Lists can be numbered inside the ol tags.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;It's a good think.&lt;/li&gt;
+  &lt;li&gt;And numbered lists&lt;/li&gt;
+  &lt;li&gt;can be nested too,&lt;/li&gt;
+  &lt;li&gt;to create lists inside lists.
+	&lt;ol&gt;
+	  &lt;li&gt;And say: first,&lt;/li&gt;
+	  &lt;li&gt;second,&lt;/li&gt;
+	  &lt;li&gt;thirth,&lt;/li&gt;
+	  &lt;li&gt;etc...&lt;/li&gt;
+	&lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use &quot;li&quot; tag to create&lt;/li&gt;
+  &lt;li&gt;list elements.&lt;/li&gt;
+&lt;/ol&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Detailed Lists</h3>
+						<dl>
+							<dt>DL</dt>
+								<dd>Use "dl" tag to create definistion lists. </dd>
+							<dt>DT</dt>
+								<dd>Use "dt" tag to create definition terms. </dd>
+							<dt>DD</dt>
+								<dd>Use "dd" tag to create definition descriptions.</dd>
+							<dt>Definition lists are great</dt>
+								<dd>To create dictionaries ad glossaries.</dd>
+						</dl>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;dl&gt;
+	&lt;dt&gt;DL&lt;/dt&gt;
+		&lt;dd&gt;Use &quot;dl&quot; tag to create definistion lists. &lt;/dd&gt;
+	&lt;dt&gt;DT&lt;/dt&gt;
+		&lt;dd&gt;Use &quot;dt&quot; tag to create definition terms. &lt;/dd&gt;
+	&lt;dt&gt;DD&lt;/dt&gt;
+		&lt;dd&gt;Use &quot;dd&quot; tag to create definition descriptions.&lt;/dd&gt;
+	&lt;dt&gt;Definition lists are great&lt;/dt&gt;
+		&lt;dd&gt;To create dictionaries ad glossaries.&lt;/dd&gt;
+&lt;/dl&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Figure</h3>
+						<figure>
+							<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+							<figcaption>Figure 1: Suburban Beach by Acózar.</figcaption>
+						</figure>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;figure&gt;
+	&lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+	&lt;figcaption&gt;Figure 1: Suburban Beach by Acozar.&lt;/figcaption&gt;
+&lt;/figure&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<figure>
+							<ul>
+								<li>
+									<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+									<h5>List inside figure works like "Media Object"</h5>
+								</li>
+								<li>
+									<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+									<h5>And can be styled</h5>
+									<p>It's useful!</p>
+									<p><strong>Works fine!</strong></p>
+								</li>
+								<li>
+									<ul>
+										<li>
+											<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+											<h5>And can be indented</h5>
+											<p>It's useful!</p>
+										</li>
+										<li>
+											<ul>
+												<li>
+													<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+													<p>List inside figures works like "Media Object"</p>
+												</li>
+												<li>
+													<ul>
+														<li>
+															<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+															<p>List inside figures works like "Media Object"</p>
+														</li>
+														<li>
+															<ul>
+																<li>
+																	<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+																	<p>List inside figures works like "Media Object"</p>
+																</li>
+																<li>
+																	<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+																	<p>List inside figures works like "Media Object"</p>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+															<p>List inside figures works like "Media Object"</p>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+													<p>List inside figures works like "Media Object"</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+											<p>List inside figures works like "Media Object"</p>
+										</li>
+										<li>
+											<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+											<p>List inside figures works like "Media Object"</p>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<img src="../img/sample1.jpg" alt="Suburban Beach by Acózar" />
+									<h5>List inside figure works like "Media Object"</h5>
+								</li>
+							</ul>
+						</figure>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;figure&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+      &lt;h5&gt;List inside figure works like &quot;Media Object&quot;&lt;/h5&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+      &lt;h5&gt;And can be styled&lt;/h5&gt;
+      &lt;p&gt;It's useful!&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Works fine!&lt;/strong&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+          &lt;h5&gt;And can be indented&lt;/h5&gt;
+          &lt;p&gt;It's useful!&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+              &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;ul&gt;
+               &lt;li&gt;
+                 &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+                 &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+               &lt;/li&gt;
+               &lt;li&gt;
+                 &lt;ul&gt;
+	               &lt;li&gt;
+		             &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+		             &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+	               &lt;/li&gt;
+	               &lt;li&gt;
+		             &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+		             &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+	               &lt;/li&gt;
+                 &lt;/ul&gt;
+               &lt;/li&gt;
+               &lt;li&gt;
+                 &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+                 &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+               &lt;/li&gt;
+             &lt;/ul&gt;
+           &lt;/li&gt;
+           &lt;li&gt;
+             &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+             &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+           &lt;/li&gt;
+         &lt;/ul&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+         &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+       &lt;/li&gt;
+       &lt;li&gt;
+         &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+         &lt;p&gt;List inside figures works like &quot;Media Object&quot;&lt;/p&gt;
+       &lt;/li&gt;
+     &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img src=&quot;../img/sample1.jpg&quot; alt=&quot;Suburban Beach by Acozar&quot; /&gt;
+      &lt;h5&gt;List inside figure works like &quot;Media Object&quot;&lt;/h5&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/figure&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Table</h3>
+						<table>
+						  <thead>
+							<tr>
+							  <th>#</th>
+							  <th>First Name</th>
+							  <th>Last Name</th>
+							  <th>Username</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>1</td>
+							  <td>Mark</td>
+							  <td>Otto</td>
+							  <td>@mdo</td>
+							</tr>
+							<tr>
+							  <td>2</td>
+							  <td>Jacob</td>
+							  <td>Thornton</td>
+							  <td>@fat</td>
+							</tr>
+							<tr>
+							  <td>3</td>
+							  <td>Larry</td>
+							  <td>the Bird</td>
+							  <td>@twitter</td>
+							</tr>
+						  </tbody>
+						</table>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;table&gt;
+  &lt;thead&gt;
+	&lt;tr&gt;
+	  &lt;th&gt;#&lt;/th&gt;
+	  &lt;th&gt;First Name&lt;/th&gt;
+	  &lt;th&gt;Last Name&lt;/th&gt;
+	  &lt;th&gt;Username&lt;/th&gt;
+	&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+	&lt;tr&gt;
+	  &lt;td&gt;1&lt;/td&gt;
+	  &lt;td&gt;Mark&lt;/td&gt;
+	  &lt;td&gt;Otto&lt;/td&gt;
+	  &lt;td&gt;@mdo&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	  &lt;td&gt;2&lt;/td&gt;
+	  &lt;td&gt;Jacob&lt;/td&gt;
+	  &lt;td&gt;Thornton&lt;/td&gt;
+	  &lt;td&gt;@fat&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	  &lt;td&gt;3&lt;/td&gt;
+	  &lt;td&gt;Larry&lt;/td&gt;
+	  &lt;td&gt;the Bird&lt;/td&gt;
+	  &lt;td&gt;@twitter&lt;/td&gt;
+	&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Select</h3>
+						<h4>Default select</h4>
+						<select>
+							<option value="-1">Select a browser</option>
+							<option value="1">Chrome</option>
+							<option value="2">Safari</option>
+							<option value="3">Internet Explorer</option>
+							<option value="4">Firefox</option>
+							<option value="5">Opera</option>
+						</select>
+						<h4>Custom select</h4>
+						<p>More options are avaible in <a href="forms.html">forms components</a>.</p>
+						<br class="white-space" />
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;select&gt;
+	&lt;option value=&quot;-1&quot;&gt;Select a browser&lt;/option&gt;
+	&lt;option value=&quot;1&quot;&gt;Chrome&lt;/option&gt;
+	&lt;option value=&quot;2&quot;&gt;Safari&lt;/option&gt;
+	&lt;option value=&quot;3&quot;&gt;Internet Explorer&lt;/option&gt;
+	&lt;option value=&quot;4&quot;&gt;Firefox&lt;/option&gt;
+	&lt;option value=&quot;5&quot;&gt;Opera&lt;/option&gt;
+&lt;/select&gt;
+	
+&lt;div class=&quot;select&quot;&gt;
+	&lt;select&gt;
+		&lt;option value=&quot;-1&quot;&gt;Select a browser&lt;/option&gt;
+		&lt;option value=&quot;1&quot;&gt;Chrome&lt;/option&gt;
+		&lt;option value=&quot;2&quot;&gt;Safari&lt;/option&gt;
+		&lt;option value=&quot;3&quot;&gt;Internet Explorer&lt;/option&gt;
+		&lt;option value=&quot;4&quot;&gt;Firefox&lt;/option&gt;
+		&lt;option value=&quot;5&quot;&gt;Opera&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Form (Fieldset, Label, Legend, Input & Submit)</h3>
+						<h4>Default form</h4>
+						<form action="#">
+							<fieldset>
+								<legend>User</legend>
+								<label>First name:</label> <input type="text" name="fname"><br>
+								<label>Last name:</label> <input type="text" name="lname"><br>
+								<input type="submit" value="Submit">
+							</fieldset>
+						</form>
+						<h4>Custom forms</h4>
+						<p>More options are avaible in <a href="forms.html">forms components</a>.</p>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;form action=&quot;#&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;legend&gt;User&lt;/legend&gt;
+		&lt;label&gt;First name:&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;&lt;br&gt;
+		&lt;label&gt;Last name:&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;lname&quot;&gt;&lt;br&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Input Types</h3>
+						<h4>Default Checkbox</h4>
+						<label><input type="checkbox" name="some" value="" />Check-me</label>
+						
+						<h4>Default Radio</h4>
+						<label><input type="radio" value="" />Choose</label>
+						<label><input type="radio" value="" />Choose</label>
+						<label><input type="radio" value="" />Choose</label>
+						
+						<h4>Default Submit</h4>
+						<input type="submit" value="submit" />
+							
+						<h4>Custom forms</h4>
+						<p>More options are avaible in <a href="forms.html">forms components</a>.</p>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;some&quot; value=&quot;&quot; /&gt;Check-me&lt;/label&gt;
+
+&lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;&quot; /&gt;Choose&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;&quot; /&gt;Choose&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;&quot; /&gt;Choose&lt;/label&gt;
+
+&lt;input type=&quot;submit&quot; value=&quot;submit&quot; /&gt;
+	
+&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;input id=&quot;check&quot; name=&quot;1&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt;
+	&lt;label for=&quot;check&quot;&gt;Check-me&lt;/label&gt;
+&lt;/div&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Textarea</h3>
+						<textarea rows="5"></textarea>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;textarea rows=&quot;5&quot;&gt;&lt;/textarea&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Aside</h3>
+						<aside>
+							<header>
+									<h4>Aside Title</h4>
+									<p>Aside Description</p>
+							</header>
+							<div>
+								<p>Aside content here. Don't confuse aside with "Sidebar" concept.</p>
+							</div>
+							<footer>
+								<p>Aside footer info</p>
+							</footer>
+						</aside>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;aside&gt;
+	&lt;header&gt;
+		&lt;hgroup&gt;
+			&lt;h4&gt;Aside Title&lt;/h4&gt;
+			&lt;p&gt;Aside Description&lt;/p&gt;
+		&lt;/hgroup&gt;
+	&lt;/header&gt;
+	&lt;div&gt;
+		&lt;p&gt;Aside content here. Don't confuse aside with &quot;Sidebar&quot; concept.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;p&gt;Aside footer info&lt;/p&gt;
+	&lt;/footer&gt;
+&lt;/aside&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Adress examples.</h3>
+						<address>
+						  <strong rel="author" data-info="hipertextos.net">Hipertextos</strong><br>
+						  Web Street, 1
+						  08930 Pla de Besòs<br>
+						  Barcelona, España<br>
+						  <abbr title="Phone">P:</abbr> <a href="tel:616599593" title="Call me!">(0034) 616599593</a>
+						</address>
+						<address>
+						  <strong>My name</strong><br>
+						  <a href="mailto:hipertextos@hipertextos.net" title="Mail me!">hipertextos@hipertextos.net</a>
+						</address>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;address&gt;
+  &lt;strong rel=&quot;author&quot; data-info=&quot;hipertextos.net&quot;&gt;Hipertextos&lt;/strong&gt;&lt;br&gt;
+  Web Street, 1
+  08930 Pla de Bes&Atilde;&sup2;s&lt;br&gt;
+  Barcelona, Espa&Atilde;&plusmn;a&lt;br&gt;
+  &lt;abbr title=&quot;Phone&quot;&gt;P:&lt;/abbr&gt; &lt;a href=&quot;tel:616599593&quot; title=&quot;Call me!&quot;&gt;(0034) 616599593&lt;/a&gt;
+&lt;/address&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+						<h3 class="intoc">Details</h3>
+						<details>
+							<summary>Details</summary>
+								<p>Details and Summary only work on webkit browsers: Chrome and Safari.</p>
+						</details>
+						<div class="collapser">
+							<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+							<div class="box">
+									<pre class="prettyprint linenums">
+&lt;details&gt;
+	&lt;summary&gt;Details&lt;/summary&gt;
+		&lt;p&gt;Details and Summary only work on webkit browsers: Chrome and Safari.&lt;/p&gt;
+&lt;/details&gt;
+									</pre>
+							</div>
+						</div><!-- /.collapser -->
+						<hr />
+						
+					</div><!-- /div (generic) -->
+					<footer>
+						<p>Article Footer.</p>
+					</footer>
+				</article>
+			</section>
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

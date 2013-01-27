@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Page & content</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Page & content</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+		
+			<h3 class="intoc">Page</h3>
+			<p>"Page" class works like a global container. Modals, Table of Content and notifications should be keep outside "page".</p>
+			<figure class="fig-zoomable"><img src="slides/page.jpg" /><figcaption>Page class representation</figcaption></figure>
+			
+			<h3 class="intoc">Content</h3>
+			<p>"Content" class works like a page wrapper with fixed-width, centering the content and making it responsive.</p>
+			<figure class="fig-zoomable"><img src="slides/content.jpg" /><figcaption>Content class representation</figcaption></figure>
+			
+			<h3 class="intoc">Content-fluid</h3>
+			<p>"Content-fluid" class works like a fluid page wrapper, expanding all content to full screen device.</p>
+			<figure class="fig-zoomable"><img src="slides/content-fluid.jpg" /><figcaption>Content-fluid class representation</figcaption></figure>
+			
+			<h3 class="intoc">Page sections</h3>
+			<p>Page are divided in header, content and footer.</p>
+			<figure class="fig-zoomable"><img src="slides/page-sections.jpg" /><figcaption>Page sections representation</figcaption></figure>
+			
+			<h3 class="intoc">Reusable content classes</h3>
+			<p>Content and content-fluid classes are reusable to center any content in a page and making it responsive.</p>
+			<p class="txt-warning">Important: Header and footer are reusable inside article, section, aside or any box class. Otherwise <strong>content-fluid</strong> class must be used inside this elements.</p>
+			<figure class="fig-zoomable"><img src="slides/content-class-reusable.jpg" /><figcaption>Reusable content class representation</figcaption></figure>
+			<figure class="fig-zoomable"><img src="slides/content-fluid-reusable.jpg" /><figcaption>Reusable content-fluid class representation</figcaption></figure>
+			
+			
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

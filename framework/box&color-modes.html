@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Box & color modes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Box & color modes</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+		
+			<h3 class="intoc">The Box Model</h3>
+			<p>The "box" class creates a reusable and adapatative fluid container to use in any context.</p>
+			<figure class="fig-zoomable"><img src="slides/box-model.jpg" /><figcaption>The Box model</figcaption></figure>
+			
+			<h3 class="intoc">Generic Box</h3>
+			<p>The box internal structure are divided in header, .corpus, and footer. The icon button top right positioned is used to close modals boxes. Buttons inside footer are floating right.</p>
+			<div class="box">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Generic Box</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button">button</a>
+				</footer>
+			</div><!-- /.box -->
+
+			<h3 class="intoc">Box HTML markup</h3>
+			<pre class="prettyprint linenums">
+&lt;div class=&quot;box&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+			
+			<br class="clearfix" />
+			
+			<h3 class="intoc">Boxes and modes</h3>
+			<p>Box model is perfect to use in combination with CSS color modes included in hipertextos.css.</p>
+			<pre>&lt;div class=&quot;box MODE&quot;&gt;...</pre>
+			
+			<h3 class="intoc">Action</h3>
+			<div class="box action">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Action</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button action">Action</a>
+				</footer>
+			</div><!-- /.action -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box action&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button action&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Ads</h3>
+			<div class="box ads">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Ads</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button ads">Ads</a>
+				</footer>
+			</div><!-- /.ads -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box ads&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button ads&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Alert</h3>
+			<div class="box alert">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Alert</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button alert">Alert</a>
+				</footer>
+			</div><!-- /.alert -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box alert&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button alert&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Attention</h3>
+			<div class="box attention">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Attention</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button attention">Attention</a>
+				</footer>
+			</div><!-- /.attention -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box attention&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button attention&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Blured</h3>
+			<div class="box blured">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Blured</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button blured">Blured</a>
+				</footer>
+			</div><!-- /.attention -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box blured&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button blured&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Cinema</h3>
+			<div class="box cinema">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Cinema</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button cinema">Cinema</a>
+				</footer>
+			</div><!-- /.cinema -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box cinema&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button cinema&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+				
+			<h3 class="intoc">City</h3>
+			<div class="box city">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>City</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button city">City</a>
+				</footer>
+			</div><!-- /.city -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box city&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button city&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Code</h3>
+			<div class="box code">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Code</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<pre>Demo text: Loret isum...</pre>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button code">Code</a>
+				</footer>
+			</div><!-- /.code -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box code&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button code&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Congratulations</h3>
+			<div class="box congratulations">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Congratulations</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button congratulations">Congratulations</a>
+				</footer>
+			</div><!-- /.congratulations -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box congratulations&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button congratulations&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Context</h3>
+			<div class="box context">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Context</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button context">Context</a>
+				</footer>
+			</div><!-- /.context -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box context&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button context&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Danger</h3>
+			<div class="box danger">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Danger</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button danger">Danger</a>
+				</footer>
+			</div><!-- /.danger -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box danger&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button danger&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Description</h3>
+			<div class="box description">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Description</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button description">Description</a>
+				</footer>
+			</div><!-- /.description -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box description&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button description&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+				
+				<h3 class="intoc">Design</h3>
+			<div class="box design">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Design</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button design">Design</a>
+				</footer>
+			</div><!-- /.design -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box design&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button design&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Developement</h3>
+			<div class="box developement">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Developement</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button developement">Dvelopement</a>
+				</footer>
+			</div><!-- /.developement -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box developement&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button developement&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Disabled</h3>
+			<div class="box disabled">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Disabled</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button disabled">Disabled</a>
+				</footer>
+			</div><!-- /.disabled -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box disabled&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button disabled&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Enjoy</h3>
+			<div class="box enjoy">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Enjoy</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button enjoy">Enjoy</a>
+				</footer>
+			</div><!-- /.enjoy -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box enjoy&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button enjoy&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Error</h3>
+			<div class="box error">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Error</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button error">Error</a>
+				</footer>
+			</div><!-- /.error -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box error&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button error&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+						
+			<h3 class="intoc">Focused</h3>
+			<div class="box focused">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Focused</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button focused">Focused</a>
+				</footer>
+			</div><!-- /.focused -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box focused&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button focused&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Frame</h3>
+			<div class="box frame">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Frame</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button frame">Frame</a>
+				</footer>
+			</div><!-- /.frame -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box frame&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button frame&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Good</h3>
+			<div class="box good">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Good</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button good">Good</a>
+				</footer>
+			</div><!-- /.good -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box good&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button good&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Highlight</h3>
+			<div class="box highlight">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Highlight</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button highlight">Highlight</a>
+				</footer>
+			</div><!-- /.highlight -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box highlight&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button highlight&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->		
+			
+			<h3 class="intoc">Info</h3>
+			<div class="box info">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Info</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button info">Info</a>
+				</footer>
+			</div><!-- /.info -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box info&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button info&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Invisible</h3>
+			<div class="box invisible">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Invisible</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button invisible">Invisible</a>
+				</footer>
+			</div><!-- /.invisible -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box invisible&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button invisible&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Join</h3>
+			<div class="box join">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Join</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>						
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button join">Join</a>
+				</footer>
+			</div><!-- /.join -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box join&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button join&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Message</h3>
+			<div class="box message">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Message</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button message">Message</a>
+				</footer>
+			</div><!-- /.message -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box message&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button message&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->		
+				
+			<h3 class="intoc">Muted</h3>
+			<div class="box muted">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Muted</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button muted">Muted</a>
+				</footer>
+			</div><!-- /.muted -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box muted&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button muted&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Nature</h3>
+			<div class="box nature">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Nature</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button nature">Nature</a>
+				</footer>
+			</div><!-- /.nature -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box nature&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button nature&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Navigation</h3>
+			<div class="box navigation">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Navigation</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button navigation">Navigation</a>
+				</footer>
+			</div><!-- /.navigation -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box navigation&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button navigation&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">News</h3>
+			<div class="box news">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>News</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button news">News</a>
+				</footer>
+			</div><!-- /.news -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box news&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button news&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Noted</h3>
+			<div class="box noted">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Noted</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button noted">noted</a>
+				</footer>
+			</div><!-- /.Noted -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box noted&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button noted&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Notification</h3>
+			<div class="box notification">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Notification</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>						
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button notification">notification</a>
+				</footer>
+			</div><!-- /.notification -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box notification&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button notification&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Paperfold</h3>
+			<div class="box paperfold">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Paperfold</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>						
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button">Paperfold</a>
+				</footer>
+			</div><!-- /.paperfold -->
+			<div class="box paperfold">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Paperfold</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>						
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button">Paperfold</a>
+				</footer>
+			</div><!-- /.paperfold -->
+			<div class="box paperfold">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Paperfold</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>						
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button">Paperfold</a>
+				</footer>
+			</div><!-- /.paperfold -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box paperfold&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Phone</h3>
+			<div class="box phone">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Phone</h4>
+				</header>
+				<div class="corpus overflowed">
+					<p>Description...</p>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 1</a></li>
+					</ul>						
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button phone">Phone</a>
+				</footer>
+			</div><!-- /.phone -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box phone&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button phone&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Prestige</h3>
+			<div class="box prestige">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Prestige</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button prestige">Prestige</a>
+				</footer>
+			</div><!-- /.prestige -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box prestige&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button prestige&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Primary</h3>
+			<div class="box primary">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Primary</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button primary">Primary</a>
+				</footer>
+			</div>	<!-- /.primary -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box primary&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button primary&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Regular</h3>
+			<div class="box regular">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Regular</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button regular">Regular</a>
+				</footer>
+			</div><!-- /.regular -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box regular&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button regular&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Settings</h3>
+			<div class="box settings">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Settings</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button settings">Settings</a>
+				</footer>
+			</div><!-- /.settings -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box settings&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button settings&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Shazam</h3>
+			<div class="box shazam">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Shazam</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button shazam">Shazam</a>
+				</footer>
+			</div><!-- /.shazam -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box shazam&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button shazam&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+				
+			<h3 class="intoc">Skinned</h3>
+			<div class="box skinned">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Skinned</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button skinned">Skinned</a>
+				</footer>
+			</div><!-- /.skinned -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box skinned&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button skinned&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Softlight</h3>
+			<div class="box softlight">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Softlight</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button softlight">Softlight</a>
+				</footer>
+			</div><!-- /.softlight -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box softlight&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button softlight&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+				
+			<h3 class="intoc">Soviet</h3>
+			<div class="box soviet">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Soviet</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button soviet">Soviet</a>
+				</footer>
+			</div><!-- /.soviet -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box soviet&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button soviet&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+				
+			<h3 class="intoc">Stamp</h3>
+			<div class="box stamp">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Stamp</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button stamp">Stamp</a>
+				</footer>
+			</div><!-- /.stamp -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box stamp&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button stamp&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Success</h3>
+			<div class="box success">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Success</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button success">Success</a>
+				</footer>
+			</div><!-- /.success -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box success&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button success&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Tools</h3>
+			<div class="box tools">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Tools</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button tools">Tools</a>
+				</footer>
+			</div><!-- /.tools -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box tools&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button tools&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Unstyled</h3>
+			<div class="box unstyled">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Unstyled</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button unstyled">Unstyled</a>
+				</footer>
+			</div><!-- /.unstyled -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box unstyled&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button unstyled&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Velvet</h3>
+			<div class="box velvet">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Velvet</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button velvet">Velvet</a>
+				</footer>
+			</div><!-- /.velvet -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box velvet&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button velvet&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Warning</h3>
+			<div class="box warning">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Warning</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button warning">Warning</a>
+				</footer>
+			</div><!-- /.warning -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box warning&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button warning&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Welcome</h3>
+			<div class="box welcome">
+				<a href="#" class="icon-button">x</a>
+				<header>
+					<h4>Welcome</h4>
+					<p>Description</p>
+				</header>
+				<div class="corpus">
+					<p>Demo text: Loret isum...</p>
+				</div>
+				<footer>
+					<a href="#" class="button">Cancel</a>
+					<a href="#" class="button welcome">Welcome</a>
+				</footer>
+			</div><!-- /.welcome -->
+			<div class="collapser">
+					<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+					<div class="box code">
+						<span class="corpus">
+							<pre class="prettyprint linenums">
+&lt;div class=&quot;box welcome&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;icon-button&quot;&gt;x&lt;/a&gt;
+	&lt;header&gt;
+		&lt;h4&gt;Generic Box&lt;/h4&gt;
+		&lt;p&gt;Description&lt;/p&gt;
+	&lt;/header&gt;
+	&lt;div class=&quot;corpus&quot;&gt;
+		&lt;p&gt;Demo text: Loret isum...&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;footer&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;button welcome&quot;&gt;button&lt;/a&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;&lt;!-- /.box --&gt;
+							</pre>
+						</span>
+					</div>
+				</div><!-- /.collapser -->
+			
+			<br class="clearfix" />
+			
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

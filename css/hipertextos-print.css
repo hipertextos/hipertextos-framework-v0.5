@@ -1,0 +1,63 @@
+/* Hipertextos print.css */
+
+body {
+	background: white;
+	color: #000;
+	font-size: 12pt; 
+	font-family: Georgia, ‘Times New Roman’, serif; 
+	line-height: 18pt;
+}
+* {
+	background: transparent;
+	clear: both;
+	color: #000;
+	display: block;
+	font-size: 12pt; 
+	font-family: Georgia, ‘Times New Roman’, serif; 
+	line-height: 18pt;
+	margin: 0 0 24pt;
+	padding: 0;
+	width: 100%;
+	word-break: break-word;
+}
+h1 { font-size: 36pt; }
+h2 { font-size: 30pt; }
+h3 { font-size: 24pt; }
+h4 { font-size: 20pt; }
+h5 { font-size: 18pt; }
+h6 { font-size: 16pt; }
+p { font-size: 12pt; }
+ul, li, p {
+	margin: 0 0 12pt;
+}
+a, a:link, a:visited {
+	color: #aa0000;
+	display: inline;
+	font-weight: bold; 
+	text-decoration: underline; 
+}
+a:link:after { 
+	content: " (" attr(href) ") "; 
+}
+nav,
+script,
+#toc,
+.modal {
+	display: none;
+}
+pre {
+	border: 1px solid #ddd;
+	display: block;
+	font-size: 9pt;
+	margin: 2%;
+	padding: 2%;
+	width: 92%;
+}
+pre *, code, code *, cite, small, strong,
+i, em, span {
+	display: inline;
+	word-break:break-word;
+}
+
+table, thead, tr { display: table; width: 100%; }
+th { border: 1px solid #ddd; display: table-cell; width: auto; }

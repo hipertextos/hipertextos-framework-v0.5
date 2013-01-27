@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Layouts & Grids</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Layouts & Grids</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+
+		<div class="content">
+			<h3 class="intoc">12 columns grid system with "span" class</h3>
+			<p>Smart grid with floating attribute, as always, but in percentages. Works in all browsers.</p>
+			<div class="layout">
+				<div class="span-1"> <div class="placeholder"><h6>span-1</h6></div> </div>
+				<div class="span-2"> <div class="placeholder"><h6>span-2</h6></div> </div>
+				<div class="span-3"> <div class="placeholder"><h6>span-3</h6></div> </div>
+				<div class="span-4"> <div class="placeholder"><h6>span-4</h6></div> </div>
+				<div class="span-2"> <div class="placeholder"><h6>span-2</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-5"> <div class="placeholder"><h6>span-5</h6></div> </div>
+				<div class="span-7"> <div class="placeholder"><h6>span-7</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-6"> <div class="placeholder"><h6>span-6</h6></div> </div>
+				<div class="span-6"> <div class="placeholder"><h6>span-6</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-8"> <div class="placeholder"><h6>span-6</h6></div> </div>
+				<div class="span-4"> <div class="placeholder"><h6>span-4</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-9"> <div class="placeholder"><h6>span-9</h6></div> </div>
+				<div class="span-3"> <div class="placeholder"><h6>span-3</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-10"> <div class="placeholder"><h6>span-10</h6></div> </div>
+				<div class="span-2"> <div class="placeholder"><h6>span-2</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-11"> <div class="placeholder"><h6>span-11</h6></div> </div>
+				<div class="span-1"> <div class="placeholder"><h6>span-1</h6></div> </div>
+			</div>
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;span-1&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;span-11&quot;&gt;  &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+				
+			<h3 class="intoc">10 columns grid system with "span" class</h3>
+			<p>Variation to work in a 10 columns system, in percentages also.</p>
+			<div class="layout">
+				<div class="span-1-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+				<div class="span-2-10"> <div class="placeholder"><h6>span-2-10</h6></div> </div>
+				<div class="span-3-10"> <div class="placeholder"><h6>span-3-10</h6></div> </div>
+				<div class="span-4-10"> <div class="placeholder"><h6>span-4-10</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-5-10"> <div class="placeholder"><h6>span-5-10</h6></div> </div>
+				<div class="span-5-10"> <div class="placeholder"><h6>span-5-10</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-6-10"> <div class="placeholder"><h6>span-6-10</h6></div> </div>
+				<div class="span-4-10"> <div class="placeholder"><h6>span-4-10</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-7-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+				<div class="span-3-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-8-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+				<div class="span-2-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+			</div>
+			<div class="layout">
+				<div class="span-9-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+				<div class="span-1-10"> <div class="placeholder"><h6>span-1-10</h6></div> </div>
+			</div>
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;span-2-10&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;span-8-10&quot;&gt;  &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+				
+			<h3 class="intoc">Layout system with magic "col" class</h3>
+			<p>Smart regular layout with CSS table-cell attribute. By default, every cell shares the width space inside the same layout. Works perfectly in all browsers, also Explorer, exerimenting a strange but acceptable little issue in webkit.</p>
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col"> <div class="placeholder"><h6>col</h6></div> </div>
+			</div><!-- /.layout -->	
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;col&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt;  &lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt;  &lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;col&quot;&gt;  &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+				
+			<h3 class="intoc">12 columns layout system with "col" class</h3>
+			<p>With table-cell attribute. In percentages. Works in all browsers, exerimenting a little but acceptable issue in Explorer.</p>
+			<div class="layout">
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>			
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-2"> <div class="placeholder"><h6>col-2</h6></div> </div>
+				<div class="col-3"> <div class="placeholder"><h6>col-3</h6></div> </div>
+				<div class="col-3"> <div class="placeholder"><h6>col-3</h6></div> </div>
+				<div class="col-4"> <div class="placeholder"><h6>col-4</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-5"> <div class="placeholder"><h6>col-5</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+				<div class="col-6"> <div class="placeholder"><h6>col-6</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-7"> <div class="placeholder"><h6>col-7</h6></div> </div>
+				<div class="col-5"> <div class="placeholder"><h6>col-5</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-8"> <div class="placeholder"><h6>col-8</h6></div> </div>
+				<div class="col-4"> <div class="placeholder"><h6>col-4</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-9"> <div class="placeholder"><h6>col-9</h6></div> </div>
+				<div class="col-3"> <div class="placeholder"><h6>col-3</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-10"> <div class="placeholder"><h6>col-10</h6></div> </div>
+				<div class="col-2"> <div class="placeholder"><h6>col-2</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-11"> <div class="placeholder"><h6>col-11</h6></div> </div>
+				<div class="col-1"> <div class="placeholder"><h6>col-1</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<div class="col-12"> <div class="placeholder"><h6>col-12</h6></div> </div>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;col-2&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;col-10&quot;&gt;  &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+				
+			<h3 class="intoc">10 columns layout system</h3>
+			<p>With table-cell attribute, but in 10 columns. In percentages.</p>
+			<div class="layout">
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+			   <div class="col-2-10">
+				 <div class="placeholder"><h6>col-2-10</h6></div>
+			   </div>
+			   <div class="col-2-10">
+				 <div class="placeholder"><h6>col-2-10</h6></div>
+			   </div>
+			   <div class="col-2-10">
+				 <div class="placeholder"><h6>col-2-10</h6></div>
+			   </div>
+			   <div class="col-2-10">
+				 <div class="placeholder"><h6>col-2-10</h6></div>
+			   </div>
+			   <div class="col-2-10">
+				 <div class="placeholder"><h6>col-2-10</h6></div>
+			   </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+			   <div class="col-1-10">
+				 <div class="placeholder"><h6>col-1-10</h6></div>
+			   </div>
+			   <div class="col-3-10">
+				 <div class="placeholder"><h6>col-3-10</h6></div>
+			   </div>
+			   <div class="col-2-10">
+				 <div class="placeholder"><h6>col-2-10</h6></div>
+			   </div>
+			   <div class="col-4-10">
+				 <div class="placeholder"><h6>col-4-10</h6></div>
+			   </div>
+			</div><!-- /.layout -->
+			<div class="layout">
+			   <div class="col-5-10">
+				 <div class="placeholder"><h6>col-5-10</h6></div>
+			   </div>
+			   <div class="col-5-10">
+				 <div class="placeholder"><h6>col-5-10</h6></div>
+			   </div>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;col-5-10&quot;&gt; &lt;/div&gt;
+	&lt;div class=&quot;col-5-10&quot;&gt;  &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+				
+			<h3 class="intoc">12 columns Gallery Thumbnails</h3>
+			<p>Thumbs with inline-block attribute. Works in all browsers.</p>
+			<p class="txt-warning">Inline-block elements creates strange white space between boxes. You can remove it with <a href="http://css-tricks.com/fighting-the-space-between-inline-block-elements/">this simples tricks by CSS-tricks</a>.</p>
+			<div class="gallery">
+				<div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div><!--
+				--><div class="thumb-1">
+					<div class="placeholder"><h6>thumb-1</h6></div>
+				</div>
+			</div><!-- /.gallery -->
+			<div class="gallery">
+				<div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div><!--
+				--><div class="thumb-2">
+					<div class="placeholder"><h6>thumb-2</h6></div>
+				</div>
+			</div><!-- /.gallery -->
+			<div class="gallery">
+				<div class="thumb-4">
+					<div class="placeholder"><h6>thumb-4</h6></div>
+				</div><!--
+				--><div class="thumb-4">
+					<div class="placeholder"><h6>thumb-4</h6></div>
+				</div><!--
+				--><div class="thumb-4">
+					<div class="placeholder"><h6>thumb-4</h6></div>
+				</div><!--
+				--><div class="thumb-4">
+					<div class="placeholder"><h6>thumb-4</h6></div>
+				</div><!--
+				--><div class="thumb-4">
+					<div class="placeholder"><h6>thumb-4</h6></div>
+				</div><!--
+				--><div class="thumb-4">
+					<div class="placeholder"><h6>thumb-4</h6></div>
+				</div>
+			</div><!-- /.gallery -->
+			<div class="gallery">
+				<div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div><!--
+				--><div class="thumb-3">
+					<div class="placeholder"><h6>thumb-3</h6></div>
+				</div>
+			</div><!-- /.gallery -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;gallery&quot;&gt;
+	&lt;div class=&quot;thumb-2&quot;&gt; &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2&quot;&gt;  &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2&quot;&gt;  &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2&quot;&gt; &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2&quot;&gt;  &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2&quot;&gt; &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+
+			<h3 class="intoc">10 columns Gallery Thumbnails</h3>
+			<p>Thumbs with inline-block attribute, but in a 10 columns grid.</p>
+			<div class="gallery">
+				<div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div><!--
+				--><div class="thumb-1-10">
+					<div class="placeholder"><h6>thumb-1-10</h6></div>
+				</div>
+			</div><!-- /.gallery -->
+			<div class="gallery">
+				<div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div><!--
+				--><div class="thumb-2-10">
+					<div class="placeholder"><h6>thumb-2-10</h6></div>
+				</div>
+			</div><!-- /.gallery -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;gallery&quot;&gt;
+	&lt;div class=&quot;thumb-2-10&quot;&gt; &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2-10&quot;&gt;  &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2-10&quot;&gt; &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2-10&quot;&gt;  &lt;/div&gt;&lt;!--
+	--&gt;&lt;div class=&quot;thumb-2-10&quot;&gt; &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+						
+			<h3 class="intoc">Fluid columns </h3>
+			<p>Content fluids in columns. Works only in modern browsers. Caution with weadows and browser supports!</p>		
+			<div class="layout">
+				<div class="columns-2">
+					<div class="placeholder"><h6>columns-2</h6></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+				</div><!-- /.columns-2 -->
+			</div><!-- /.layout -->
+			<hr />
+			<div class="layout">
+				<div class="columns-3">
+					<div class="placeholder"><h6>columns-2</h6></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+				</div><!-- /.columns-3 -->
+			</div><!-- /.layout -->
+			<hr />
+			<div class="layout">
+				<div class="columns-4">
+					<div class="placeholder"><h6>columns-2</h6></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet eleifend rutrum. Quisque lacinia eros ac augue interdum vel dignissim lacus fringilla. Vestibulum nisi tellus, laoreet ac molestie a, bibendum a justo. Mauris semper blandit metus, non pellentesque quam laoreet non. Sed ac felis a erat gravida vulputate. Suspendisse potenti. Nulla non risus eu urna pellentesque feugiat.</p>
+				</div><!-- /.columns-4 -->
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;layout&quot;&gt;
+	&lt;div class=&quot;columns-2&quot;&gt; &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			
+			<br class="clearfix" />
+		</div><!-- /.content -->
+		<br class="clearfix" />
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

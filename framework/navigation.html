@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Navigation components</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Navigation components</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+
+		<h3 class="intoc">Nav</h3>		
+			<div class="layout">
+				<h5>Nav (default)</h5>
+				<nav>
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;nav&gt;
+	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+&lt;/nav&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			
+		<h3 class="intoc">Nav & Breadcrumb</h3>
+			<div class="layout">
+				<h5>Class: breadcrumb</h5>
+				<nav class="breadcrumb">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Subsection</a>
+					Article
+				</nav>
+			</div><!-- /.layout -->
+			<div class="layout">
+				<h5>Class: list inside breadcrumb</h5>
+				<nav class="breadcrumb">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Section</a></li>
+						<li><a href="#">Subsection</a></li>
+						<li>Article</li>
+					</ul>
+				</nav>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;nav class=&quot;breadcrumb&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Subsection&lt;/a&gt;
+	Article
+&lt;/nav&gt;
+&lt;nav class=&quot;breadcrumb&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Subsection&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;Article&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+		
+			<h3 class="intoc">Nav & Buttons</h3>
+			<div class="layout">
+				<h5>Class: Nav with button links</h5>
+				<nav>
+						<a class="button" href="#">Home</a>
+						<a class="button" href="#">Section</a>
+						<a class="button" href="#">Section</a>
+						<a class="button" href="#">Section</a>
+						<a class="button" href="#">Section</a>
+				</nav>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;nav&gt;
+	&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Section&lt;/a&gt;
+&lt;/nav&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Nav & Button-Group & Dropdown</h3>
+			<div class="layout">
+				<h5>Class: button-group & dropdown-menu (needs JS)</h5>
+				<nav>
+					<div class="button-group">
+						<a data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+							<li><a href="#-">Item</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;div class=&quot;button-group&quot;&gt;
+	&lt;a data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+	&lt;ul class=&quot;dropdown-menu&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#-&quot;&gt;Item&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+				
+			<h3 class="intoc">Nav & color modes</h3>
+			<div class="layout">
+				<h5>Class: nav-invert</h5>
+				<nav class="nav-invert">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+			<div class="layout">
+				<h5>Class: action</h5>
+				<nav class="action">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: alert</h5>
+				<nav class="alert">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: danger</h5>
+				<nav class="danger">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: error</h5>
+				<nav class="error">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: good</h5>
+				<nav class="good">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: info</h5>
+				<nav class="info">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: message</h5>
+				<nav class="message">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: navigation</h5>
+				<nav class="navigation">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: primary</h5>
+				<nav class="primary">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: success</h5>
+				<nav class="success">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+				<h5>Class: warning</h5>
+				<nav class="warning">
+					<a href="#">Home</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+					<a href="#">Section</a>
+				</nav>
+				<br />
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;nav class=&quot;nav-invert&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;nav class=&quot;action&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;nav class=&quot;danger&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;nav class=&quot;...mode...&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;Section&lt;/a&gt;
+&lt;/nav&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			
+			<h3 class="intoc">Nav & Pagination</h3>
+			<div class="layout">
+				<h5>Class: pagination</h5>
+				<nav class="pagination">
+					<ul>
+						<li><a href="#">&laquo; Previous</a></li>
+						<li><a href="#">Next &raquo;</a></li>
+					</ul>
+				</nav>
+			</div><!-- /.layout -->
+			<br class="clearfix" />
+			<div class="layout">
+				<h5>Class: pagination (numered)</h5>
+				<nav class="pagination">
+					<ul>
+						<li><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</nav>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;nav class=&quot;pagination&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo; Previous&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;nav class=&quot;pagination&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<br class="clearfix" />
+			
+			<h3 class="intoc">Nav & Pagination & Button</h3>
+			<div class="layout">
+				<h5>Class: pagination and button links</h5>
+				<nav class="pagination">
+					<ul>
+						<li><a class="button action" href="#">&laquo; Previous</a></li>
+						<li><a class="button action" href="#">Next &raquo;</a></li>
+					</ul>
+				</nav>
+			</div><!-- /.layout -->
+			<br class="clearfix" />
+			<div class="layout">
+				<h5>Class: pagination (numered) and button links</h5>
+				<nav class="pagination">
+					<ul>
+						<li><a class="button action" href="#">&laquo;</a></li>
+						<li><a class="button action" href="#">1</a></li>
+						<li><a class="button action" href="#">2</a></li>
+						<li><a class="button action" href="#">3</a></li>
+						<li><a class="button action" href="#">5</a></li>
+						<li><a class="button action" href="#">&raquo;</a></li>
+					</ul>
+				</nav>
+			</div><!-- /.layout -->
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;nav class=&quot;pagination&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;&amp;laquo; Previous&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;Next &amp;raquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;nav class=&quot;pagination&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a class=&quot;button action&quot; href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<br class="clearfix" />
+			
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>

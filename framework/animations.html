@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+	<style>
+	.sandbox { margin: 80px auto; z-index: 1000; }
+	.fixed { position: fixed !important; top: 0; width: 100%; }
+	#animateTest {
+		text-align: center;
+		background: #aa0000;
+		padding: 20px 10px;
+		width: 240px;
+		color: #fff;
+		margin: 0 auto;
+		border-radius: 5px;
+		font-weight: bold;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-delay: .2s;
+		-webkit-animation-timing-function: ease;
+		-webkit-animation-fill-mode: both;
+		-moz-animation-duration: 1s;
+		-moz-animation-delay: .2s;
+		-moz-animation-timing-function: ease;
+		-moz-animation-fill-mode: both;
+		-ms-animation-duration: 1s;
+		-ms-animation-delay: .2s;
+		-ms-animation-timing-function: ease;
+		-ms-animation-fill-mode: both;
+		-o-animation-duration: 1s;
+		-o-animation-delay: .2s;
+		-o-animation-timing-function: ease;
+		-o-animation-fill-mode: both;
+		animation-duration: 1s;
+		animation-delay: .2s;
+		animation-timing-function: ease;
+		animation-fill-mode: both;
+	}
+	</style>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Animations</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+			
+			<div class="sandbox">
+				<div id="animateTest">
+					<p>Animate it!</p>
+				</div>
+			</div>
+
+		<div class="content">
+
+			<p class="lead">Some CSS3 animations from <a href="http://daneden.me/animate/">Dan Eden's Animate.css</a> are integrated in hipertextos.css</p>
+			<p>Call animations adding "animated" and "animation-name" classes on your HTML elements.</p>
+			<p>You can do it directly:</p>
+			<pre>&lt;div class=&quot;animated bounce&quot;&gt;Hello!&lt;/div&gt; 
+&lt;div class=&quot;animated shake&quot;&gt;Hello!&lt;/div&gt; 
+...</pre>
+			<p>or with jQuery:</p>
+			<pre>$('#element').addClass('animated bounce');
+...</pre>
+			
+			<h3 class="intoc">Attention seekers</h3>
+			<a class="button" data-test='flash'>flash</a>
+			<a class="button" data-test='bounce'>bounce</a>
+			<a class="button" data-test='shake'>shake</a>
+			<a class="button" data-test='tada'>tada</a>
+			<a class="button" data-test='swing'>swing</a>
+			<a class="button" data-test='wobble'>wobble</a>
+			<a class="button" data-test='pulse'>pulse</a>
+
+			<h3 class="intoc">Flip (currently Webkit, Firefox, &amp; IE10 only)</h3>
+			<a class="button" data-test='flip'>flip</a>
+
+			<h3 class="intoc">Fading entrance</h3>
+			<a class="button" data-test='fadeIn'>fadeIn</a>
+
+			<h3 class="intoc">Fading exit</h3>
+			<a class="button" data-test='fadeOut'>fadeOut</a>
+
+			<h3 class="intoc">Bouncing entrances</h3>
+			<a class="button" data-test='bounceIn'>bounceIn</a>
+			<a class="button" data-test='bounceInDown'>bounceInDown</a>
+			<a class="button" data-test='bounceInUp'>bounceInUp</a>
+			<a class="button" data-test='bounceInLeft'>bounceInLeft</a>
+			<a class="button" data-test='bounceInRight'>bounceInRight</a>
+
+			<h3 class="intoc">Bouncing exits</h3>
+			<a class="button" data-test='bounceOut'>bounceOut</a>
+			<a class="button" data-test='bounceOutDown'>bounceOutDown</a>
+			<a class="button" data-test='bounceOutUp'>bounceOutUp</a>
+			<a class="button" data-test='bounceOutLeft'>bounceOutLeft</a>
+			<a class="button" data-test='bounceOutRight'>bounceOutRight</a>
+			
+			<h3 class="intoc">Extras</h3>
+			<p class="lead">Get more animations adding the <a href="http://daneden.me/animate/">Dan Eden's Animate.css</a>!</p>
+			
+			<br class="white-space" />
+			
+		</div><!-- /.content -->	
+		
+		<br class="white-space" />
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+	<script>
+		function testAnim(x) {
+			$('#animateTest').removeClass().addClass(x);
+			var wait = window.setTimeout( function(){
+				$('#animateTest').removeClass()},
+				1300
+			);
+		}
+		$(function(){
+			$pos = $('.sandbox').offset().top - 0;
+	
+			$(window).on('scroll', function(){
+				if($(window).scrollTop() >= $pos) {
+					$('.sandbox').addClass('fixed');
+				} else {
+					$('.sandbox').removeClass('fixed');
+				}
+			});
+		});
+		$(document).ready(function(){
+			$('a[data-test]').click(function(){
+				var anim = $(this).attr('data-test');
+				testAnim(anim);
+			});
+		});
+	</script>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hipertextos Framework: Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href="../css/hipertextos.css" rel="stylesheet" media="screen">
+    <link href="../css/google.prettify.css" rel="stylesheet" media="screen">
+    <link href="../css/hipertextos-print.css" rel="stylesheet" media="print">
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="../ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../ics/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+	<!-- TOC -->
+	<div class="toc-button no-js" id="tocing"></div>
+	<div class="toc-side no-js" id="toc"></div>
+			
+	<!-- Modal -->
+
+	<!-- Begin Page -->
+	<div class="page pagedisplaced">
+		<nav class="nav-fixed" id="hipertextos-nav">
+			<div class="content">
+				<a href="http://hipertextos.net">Home</a>
+				<a href="http://hipertextos.net/framework">Framework</a>
+				<a href="http://articles.hipertextos.net">Blog</a>
+				<a href="http://hipertextos.net/about">About</a>
+			</div>
+		</nav>
+		<div class="white-space-nav"></div><!-- Space for .navbar-fixed! -->
+		<header id="top" class="news">
+			<div class="content">
+				<hgroup>
+					<h1 class="intoc">Forms</h1>
+					<p>Hipertextos Framework</p>
+				</hgroup>
+			</div><!-- /.content -->
+		</header>
+		<div class="content">
+		
+			<h3 class="intoc">Select</h3>
+			<h4>Default select</h4>
+			<select>
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select>
+			
+			<h4>Sized select (using "span" class)</h4>
+			<select class="span-1">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<select class="span-9">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<br class="white-space" />
+			<select class="span-2">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<select class="span-8">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<br class="white-space" />
+			<select class="span-3">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<select class="span-7">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<br class="white-space" />
+			<select class="span-4">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<select class="span-6">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<br class="white-space" />
+			<select class="span-5">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<select class="span-5">
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+			</select>
+			<br class="white-space" />
+			
+			<h4>Custom select (using "select" class)</h4>
+			<div class="select"><select>
+				<option value="-1">Select a browser</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<h4>Custom select (using "select" and modes classes)</h4>
+			<div class="select action"><select>
+				<option value="-1">Select a browser (action)</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<div class="select error"><select>
+				<option value="-1">Select a browser (error)</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<div class="select info"><select>
+				<option value="-1">Select a browser (info)</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<br class="white-space" />
+			<div class="select message"><select>
+				<option value="-1">Select a browser (message)</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<div class="select success"><select>
+				<option value="-1">Select a browser (success)</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<div class="select warning"><select>
+				<option value="-1">Select a browser (warning)</option>
+				<option value="1">Chrome</option>
+				<option value="2">Safari</option>
+				<option value="3">Internet Explorer</option>
+				<option value="4">Firefox</option>
+				<option value="5">Opera</option>
+			</select></div>
+			<br class="white-space" />
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;select&gt;
+	&lt;option value=&quot;-1&quot;&gt;Select a browser&lt;/option&gt;
+	&lt;option value=&quot;1&quot;&gt;Chrome&lt;/option&gt;
+	&lt;option value=&quot;2&quot;&gt;Safari&lt;/option&gt;
+	&lt;option value=&quot;3&quot;&gt;Internet Explorer&lt;/option&gt;
+	&lt;option value=&quot;4&quot;&gt;Firefox&lt;/option&gt;
+	&lt;option value=&quot;5&quot;&gt;Opera&lt;/option&gt;
+&lt;/select&gt;
+	
+&lt;select class=&quot;span-1&quot;&gt;
+	&lt;option value=&quot;-1&quot;&gt;Select a browser&lt;/option&gt;
+	&lt;option value=&quot;1&quot;&gt;Chrome&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;div class=&quot;select&quot;&gt;
+	&lt;select&gt;
+		&lt;option value=&quot;-1&quot;&gt;Select a browser&lt;/option&gt;
+		&lt;option value=&quot;1&quot;&gt;Chrome&lt;/option&gt;
+		&lt;option value=&quot;2&quot;&gt;Safari&lt;/option&gt;
+		&lt;option value=&quot;3&quot;&gt;Internet Explorer&lt;/option&gt;
+		&lt;option value=&quot;4&quot;&gt;Firefox&lt;/option&gt;
+		&lt;option value=&quot;5&quot;&gt;Opera&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;select yourmodehere&quot;&gt;
+	&lt;select&gt;
+		&lt;option value=&quot;-1&quot;&gt;Select a browser&lt;/option&gt;
+		&lt;option value=&quot;1&quot;&gt;Chrome&lt;/option&gt;
+		&lt;option value=&quot;2&quot;&gt;Safari&lt;/option&gt;
+		&lt;option value=&quot;3&quot;&gt;Internet Explorer&lt;/option&gt;
+		&lt;option value=&quot;4&quot;&gt;Firefox&lt;/option&gt;
+		&lt;option value=&quot;5&quot;&gt;Opera&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<hr />
+						
+						
+			<h3 class="intoc">Form (Fieldset, Label, Legend, Input & Submit)</h3>
+			<form action="#">
+				<fieldset>
+					<legend>User</legend>
+					<label>First name:</label> <input type="text" name="fname"><br>
+					<label>Last name:</label> <input type="text" name="lname"><br>
+					<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;form action=&quot;#&quot;&gt;
+	&lt;fieldset&gt;
+		&lt;legend&gt;User&lt;/legend&gt;
+		&lt;label&gt;First name:&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;fname&quot;&gt;&lt;br&gt;
+		&lt;label&gt;Last name:&lt;/label&gt; &lt;input type=&quot;text&quot; name=&quot;lname&quot;&gt;&lt;br&gt;
+		&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<hr />
+						
+			<h3 class="intoc">Form search</h3>
+			<form class="form-search" action="http://www.google.com/cse">
+				<input type="hidden" name="cx" value="yourID" />
+				<input type="text" name="q" />
+				<input type="submit" name="sa" class="button search-query" value="Search" />
+			</form>
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;form class=&quot;form-search&quot; action=&quot;http://www.google.com/cse&quot;&gt;
+	&lt;input type=&quot;hidden&quot; name=&quot;cx&quot; value=&quot;yourID&quot; /&gt;
+	&lt;input type=&quot;text&quot; name=&quot;q&quot; /&gt;
+	&lt;input type=&quot;submit&quot; name=&quot;sa&quot; class=&quot;button search-query&quot; value=&quot;Search&quot; /&gt;
+&lt;/form&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<hr />
+
+			<h3 class="intoc">Input Types</h3>
+			<h4>Default Text Input</h4>
+			<input type="text" placeholder="Text">
+			
+			<h4>Sized Text Inputs (with "text-input" and "span" classes)</h4>
+			<input type="text" class="text-input span-1" placeholder="span-1">
+			<input type="text" class="text-input span-9" placeholder="span-9">
+			<input type="text" class="text-input span-2" placeholder="span-2">
+			<input type="text" class="text-input span-8" placeholder="span-8">
+			<input type="text" class="text-input span-3" placeholder="span-3">
+			<input type="text" class="text-input span-7" placeholder="span-7">
+			<input type="text" class="text-input span-4" placeholder="span-4">
+			<input type="text" class="text-input span-6" placeholder="span-6">
+			<input type="text" class="text-input span-5" placeholder="span-5">
+			<input type="text" class="text-input span-5" placeholder="span-5">
+			<br class="white-space" />
+			
+			<h4>Default Checkbox Input</h4>
+			<label><input type="checkbox" name="some" value="" />Check-me</label>
+			
+			<h4>Custom Checkbox Input as iPhone style</h4>
+			<div class="checkbox-phone">
+				<input id="phone-check" name="n2" type="checkbox" value="" />
+				<label for="phone-check">Check-me</label>
+			</div>
+			
+			<h4>Default Radio Input</h4>
+			<label><input type="radio" value="" />Choose</label>
+			<label><input type="radio" value="" />Choose</label>
+			<label><input type="radio" value="" />Choose</label>
+			
+			<h4>Default Submit Input</h4>
+			<input type="submit" value="submit" />
+				
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+						
+&lt;input type=&quot;text&quot; placeholder=&quot;Text&quot;&gt;
+
+&lt;input type=&quot;text&quot; class=&quot;text-input span-1&quot; placeholder=&quot;span-1&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-11&quot; placeholder=&quot;span-11&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-2&quot; placeholder=&quot;span-2&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-10&quot; placeholder=&quot;span-10&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-3&quot; placeholder=&quot;span-3&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-9&quot; placeholder=&quot;span-9&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-4&quot; placeholder=&quot;span-4&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-8&quot; placeholder=&quot;span-8&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-5&quot; placeholder=&quot;span-5&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-7&quot; placeholder=&quot;span-7&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-6&quot; placeholder=&quot;span-6&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;text-input span-6&quot; placeholder=&quot;span-6&quot;&gt;
+
+&lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;some&quot; value=&quot;&quot; /&gt;Check-me&lt;/label&gt;
+
+&lt;div class=&quot;checkbox-phone&quot;&gt;
+	&lt;input id=&quot;check&quot; name=&quot;1&quot; type=&quot;checkbox&quot; value=&quot;1&quot; /&gt;
+	&lt;label for=&quot;check&quot;&gt;Check-me&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;&quot; /&gt;Choose&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;&quot; /&gt;Choose&lt;/label&gt;
+&lt;label&gt;&lt;input type=&quot;radio&quot; value=&quot;&quot; /&gt;Choose&lt;/label&gt;
+
+&lt;input type=&quot;submit&quot; value=&quot;submit&quot; /&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<hr />
+			
+			<h3 class="intoc">Textarea</h3>
+			<textarea rows="5"></textarea>
+			<div class="collapser">
+				<span class="icon-button code tip-right" data-tooltip="Show/Hide code">&lt;/&gt;</span>
+				<div class="box code">
+					<span class="corpus">
+						<pre class="prettyprint linenums">
+&lt;textarea rows=&quot;5&quot;&gt;&lt;/textarea&gt;
+						</pre>
+					</span>
+				</div>
+			</div><!-- /.collapser -->
+			<hr />
+						
+		</div><!-- /.content -->	
+		
+		<footer id="hipertextos-footer">
+			<h4 class="title"><a href="http://hipertextos.net">www.hipertextos.net</a></h4>
+		</footer>
+		
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/hipertextos-layout.js"></script>
+    <script src="../js/hipertextos.js"></script>
+    <script src="../js/jquery.ui.widget.js"></script>
+    <script src="../js/jquery.tocify.js"></script>
+    <script src="../js/google.prettify.js"></script>
+    <script>
+		$(function() {
+			// Calls the toc-side and hide it
+			$(".page").removeClass("pagedisplaced");
+			//Calls the tocify method on your HTML div.
+			$("#toc").tocify({ selectors: ".intoc" });
+			$("#toc").animate({width: 'toggle'}, 10);
+        });  
+		$("#tocing").click(function(){
+			$("#toc").animate({width: 'toggle'}, 500);
+			$('#toc').toggleClass('animated bounceInLeft');
+			$(".page").toggleClass("pagedisplaced");
+			$(".toc-button").toggleClass("expanded");
+		});  
+    </script>
+  </body>
+</html>
