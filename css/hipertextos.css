@@ -1237,6 +1237,7 @@ ul {
 
 /* Nav */
 
+.nav-fixed img { max-width: 24px; }
 .nav-bottom {
   	height: 56px;
   	margin: 0;

@@ -2,11 +2,11 @@ $(function($) {
 	var url = document.URL;
 	$("#hipertextos-nav").html('<div class="content">'+
 		'<a href="http://hipertextos.net" class="brand"><img src="../img/logo-hipertextos.png" /></a>'+
-		'<a href="#" id="nav-toggle" class="nav-toggle"><img src="../ics/16/black/list.png" /></a>'+
+		'<a href="#" id="nav-toggle" class="nav-toggle"><img src="../ics/32/black/list.png" /></a>'+
 		'<div id="nav-collapse">'+
-			'<a href="http://hipertextos.net" data-tooltip="Home" class="tip-bottom"><img src="../ics/16/black/home.png" /><span class="visible-phone">Home</span></a>'+
+			'<a href="http://hipertextos.net" data-tooltip="Home" class="tip-bottom"><img src="../ics/32/black/home.png" /><span class="visible-phone">Home</span></a>'+
 			'<div class="button-group">'+
-				'<a data-toggle="dropdown" href="#" data-tooltip="Sections" class="tip-bottom"><img src="../ics/16/black/list.png" /><span class="visible-phone">Sections</span> <div class="caret"></div></a>'+
+				'<a data-toggle="dropdown" href="#" data-tooltip="Sections" class="tip-bottom"><img src="../ics/32/black/list.png" /><span class="visible-phone">Sections</span> <div class="caret"></div></a>'+
 				'<ul class="dropdown-menu">'+
 					'<li><a href="../framework/index.html">Framework</a></li>'+
 					'<li><a href="../framework/start.html">Start</a></li>'+
@@ -35,7 +35,7 @@ $(function($) {
 				'</ul>'+
 			'</div>'+
 			'<div class="button-group">'+
-				'<a data-toggle="dropdown" href="#" data-tooltip="Share" class="tip-bottom"><img src="../ics/16/black/share.png" /><span class="visible-phone">Share</span><div class="caret"></div></a>'+
+				'<a data-toggle="dropdown" href="#" data-tooltip="Share" class="tip-bottom"><img src="../ics/32/black/share.png" /><span class="visible-phone">Share</span><div class="caret"></div></a>'+
 				'<ul class="dropdown-menu">'+
 					'<li><a href="http://www.facebook.com/sharer.php?u='+ url +'&t=title"><img src="../ics/32/black/facebookin.png" /> Facebook</a></li>'+
 					'<li><a href="https://plusone.google.com/_/+1/confirm?hl=en&url='+ url +'"><img src="../ics/32/black/googleplusin.png" /> Google +</a></li>'+
@@ -43,7 +43,7 @@ $(function($) {
 				'</ul>'+
 			'</div>'+
 			'<div class="button-group">'+
-				'<a data-toggle="dropdown" href="#" data-tooltip="Translate" class="tip-bottom"><img src="../ics/16/black/translate.png" /><span class="visible-phone">Translate</span><div class="caret"></div></a>'+
+				'<a data-toggle="dropdown" href="#" data-tooltip="Translate" class="tip-bottom"><img src="../ics/32/black/translate.png" /><span class="visible-phone">Translate</span><div class="caret"></div></a>'+
 				'<ul class="dropdown-menu">'+
 					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=es&tl=ca&hl=es&ie=UTF-8"><img src="../ics/32/flags/catalan.png" /> Catalan</a></li>'+
 					'<li><a href="http://translate.google.es/translate?u='+ url +'&sl=ca&tl=de&hl=de&ie=UTF-8"><img src="../ics/32/flags/deutsch.png" /> Deutsch</a></li>'+
