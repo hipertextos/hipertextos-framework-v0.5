@@ -2,24 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hipertextos</title>
-    <meta http-equiv="REFRESH" content="0;url=framework/index.html">
+    <title>Hipertextos Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A semantic oriented CSS framework">
+    <meta name="author" content="hipertextos">
 
     <!-- Styles -->
     <link href="css/hipertextos.css" rel="stylesheet" media="screen">
     <link href="css/hipertextos-print.css" rel="stylesheet" media="print">
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if lt IE 7]><script src="js/icomoon-lte-ie7.js"></script><![endif]-->
-  
-	<!-- If JS disabled, hack for TOC -->
-	<noscript><style>.no-js { display: none;} .pagedisplaced { position:relative; } .pagedisplaced .content { margin: 0px auto; }</style></noscript>
+    <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
 	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	
+	<style> 
+		@-webkit-keyframes logorotate {
+		  from {
+			-webkit-transform: rotateY(0deg);
+		  }
+		  to { 
+			-webkit-transform: rotateY(360deg);
+		  }
+		}
+		#home-logo {
+			background: #000;
+			border: 1px solid transparent;
+			display: block;
+			margin: 120px auto;
+			width: 256px;
+			padding: 10px 0 0 10px;
+			border-radius: 50%;
+			-webkit-animation-name:             logorotate; 
+			-webkit-animation-duration:         4s; 
+			-webkit-animation-iteration-count:  infinite;
+			-webkit-transition-timing-function: ease;
+			box-shadow:inset 1px 1px 1px #fff, inset -1px -1px 2px #fff, 0px 0px 20px #666;
+		}
+	</style>
+
     <!-- Icons -->
-    <link rel="shortcut icon" href="ics/favicon.ico">
+    <link rel="shortcut icon" href="../ics/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ics/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ics/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ics/apple-touch-icon-72-precomposed.png">
@@ -27,7 +50,30 @@
   </head>
 
   <body>
+			
+	<!-- Begin Page -->
+	<div class="page">
 
+		<div class="content">
+			<div class="main">
+				<div class="span-12"> 
+					<div id	="home-logo"><a href="http://hipertextos.net"><img src="img/logo-hipertextos.png" class="img-reflection" /></a></div>
+				</div><!-- /.span -->
+
+				<div class="span-4"> <h2 class="title"><a href="framework/index.html">Framework</a></h2></div><!-- /.span -->
+				<div class="span-4"> <h2 class="title"><a href="http://articles.hipertextos.net/">Articles</a></h2></div><!-- /.span -->
+				<div class="span-4"> <h2 class="title"><a href="http://services.hipertextos.net/">Services</a></h2></div><!-- /.span -->
+			</div><!-- /.main -->
+		</div><!-- /.content -->	
+				
+    </div><!-- /.page -->
+
+    <!-- Script
+    ================================================== -->
+    <script src="js/jquery.js"></script>
+    <script src="js/hipertextos.js"></script>
+    <script>
+ 
+    </script>
   </body>
-
 </html>
