@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Hipertextos Framework</title>
+    <title>Hipertextos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A semantic oriented CSS framework">
     <meta name="author" content="hipertextos">
@@ -14,32 +14,43 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 7]><script src="../js/icomoon-lte-ie7.js"></script><![endif]-->
 	
-	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
-	
 	<style> 
-		@-webkit-keyframes logorotate {
-		  from {
-			-webkit-transform: rotateY(0deg);
-		  }
-		  to { 
-			-webkit-transform: rotateY(360deg);
-		  }
-		}
 		#home-logo {
 			background: #000;
 			border: 1px solid transparent;
+			cursor: pointer;
 			display: block;
-			margin: 120px auto;
+			margin: 60px auto 120px;
 			width: 256px;
 			padding: 10px 0 0 10px;
 			border-radius: 50%;
-			-webkit-animation-name:             logorotate; 
-			-webkit-animation-duration:         4s; 
-			-webkit-animation-iteration-count:  infinite;
-			-webkit-transition-timing-function: ease;
 			box-shadow:inset 1px 1px 1px #fff, inset -1px -1px 2px #fff, 0px 0px 20px #666;
+			z-index: 100;
+		}
+		#trigger {
+			/*Transition*/
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+		#menu4 a, #menu5 a, #menu6 a { font-size: 48px; text-decoration: none; }
+		.dontview { display: none; }
+		.view { display: block; }
+		.displaced { 
+			margin-top: -280px; 
+			/*Transition*/
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			transition: all 1s ease;
 		}
 	</style>
+	
+	<!-- If JS disabled --><noscript><link href="../css/hipertextos-noscript.css" rel="stylesheet" media="screen"></noscript>
+	<!-- If JS disabled --><noscript><style>.dontview { display: block; }</style></noscript>
 
     <!-- Icons -->
     <link rel="shortcut icon" href="../ics/favicon.ico">
@@ -56,13 +67,47 @@
 
 		<div class="content">
 			<div class="main">
-				<div class="span-12"> 
-					<div id	="home-logo"><a href="http://hipertextos.net"><img src="img/logo-hipertextos.png" class="img-reflection" /></a></div>
-				</div><!-- /.span -->
+			
 
-				<div class="span-4"> <h2 class="title"><a href="framework/index.html">Framework</a></h2></div><!-- /.span -->
-				<div class="span-4"> <h2 class="title"><a href="http://articles.hipertextos.net/">Articles</a></h2></div><!-- /.span -->
-				<div class="span-4"> <h2 class="title"><a href="http://services.hipertextos.net/">Services</a></h2></div><!-- /.span -->
+						<div class="span-12" id="trigger"> 
+							<div id="home-logo"><img src="img/logo-hipertextos.png" /></div>
+						</div><!-- /.span -->
+						
+						
+						<div class="span-4 dontview title" id="menu1"> 
+							<h2 class="title"><a href="framework/index.html">Framework</a></h2>
+							<p class="lead">Open source<br />(documented in english)</p>
+						</div><!-- /.span -->
+						
+						<div class="span-4 dontview title" id="menu2"> 
+							<h2 class="title"><a href="http://articles.hipertextos.net/">Articles</a></h2>
+							<p class="lead">Tutorials web<br />(en català)</p>
+						</div><!-- /.span -->
+						
+						<div class="span-4 dontview title" id="menu3"> 
+							<h2 class="title"><a href="http://services.hipertextos.net">Services</a></h2>
+							<p class="lead">Serveis d'edició electrònica<br />(en català)</p>
+						</div><!-- /.span -->
+						
+						<br class="clearfix" />
+						
+						<div class="span-4 dontview" id="menu4"> 
+							<a href="https://github.com/hipertextos/hipertextos-framework"><div aria-hidden="true" data-icon="&#xe004;"></div></a>
+						</div><!-- /.span -->
+						
+						<div class="span-4 dontview" id="menu5"> 
+							<a href="http:/twitter.com/hipertextos"><div aria-hidden="true" data-icon="&#xe00b;"></div></a> 
+						</div><!-- /.span -->
+						
+						<div class="span-4 dontview" id="menu6"> 
+							<a href="mailto:&#104;&#105;&#112;&#101;&#114;&#116;&#101;&#120;&#116;&#111;&#115;&#64;&#104;&#105;&#112;&#101;&#114;&#116;&#101;&#120;&#116;&#111;&#115;&#46;&#110;&#101;&#116;"><div aria-hidden="true" data-icon="&#x31;"></div></a> 
+						</div><!-- /.span -->
+
+						<div class="span-12" id="site-title"> 
+							<h1 class="title">Hipertextos</h1>
+							<p class="lead title">Edició electrònica <br />-Barcelona-</p>
+						</div><!-- /.span -->
+											
 			</div><!-- /.main -->
 		</div><!-- /.content -->	
 				
@@ -73,7 +118,17 @@
     <script src="js/jquery.js"></script>
     <script src="js/hipertextos.js"></script>
     <script>
- 
+ 		$("#home-logo").click(function(){
+ 			$("#menu1").toggleClass("animated bounceInLeft view");
+ 			$("#menu2").toggleClass("animated fadeIn view");
+ 			$("#menu3").toggleClass("animated bounceInRight view");
+ 			$("#menu4").toggleClass("animated bounceInLeft view");
+ 			$("#menu5").toggleClass("animated fadeIn view");
+ 			$("#menu6").toggleClass("animated bounceInRight view");
+ 			$("#site-title").toggleClass("animated fadeOut");
+ 			$("#trigger").toggleClass("displaced");
+ 		}); 
     </script>
+    <script src="js/ga.js"></script>
   </body>
 </html>
