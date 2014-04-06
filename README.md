@@ -118,7 +118,7 @@ For references, please link the hipertextos home page.
 About
 =====
 
-Hipertextos was developed by Acózar.
+Hipertextos was developed by hipertextos.
 
 
 Website: http://hipertextos.net
